@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ContractingCompany.Models.PublicItems{
+namespace ContractingCompany.Models.PublicItems.Supplier{
     public class SupplierCategory
     {
         [Key]
