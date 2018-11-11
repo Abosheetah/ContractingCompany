@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using ContractingCompany.Models.PublicItems.ProductFld;
 
 namespace ContractingCompany.Models.Office.PurchaseOrderFld{
-    public class PurchaseOrderItems
+    public class PurchaseOrderItem
     {
         [Key]
         public int ID { get; set; }

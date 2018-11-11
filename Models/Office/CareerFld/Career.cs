@@ -5,8 +5,9 @@ namespace ContractingCompany.Models.Office.CareerFld{
     public class Career{
         [Key]
         public int ID { get; set; }
-        [Required]
+        [Required(ErrorMessage="Career Name is Required")]
         public string Name { get; set; }
+        [Required(ErrorMessage="Career Type is Required")]
         public int CareerTypeID { get; set; }
         [ForeignKey("CareerTypeID")]
         public CareerType CareerType { get; set; }
