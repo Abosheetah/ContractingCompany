@@ -11,7 +11,7 @@ namespace ContractingCompany.Models.Office.PurchaseOrderFld{
         [ForeignKey("PurchaseOrderID")]
         public PurchaseOrder PurchaseOrder { get; set; }
         public int ProductID { get; set; }
-        [ForeignKey("ProductID")]
+        [ForeignKey("ProductID")]       
         public Product Product { get; set; }
         public int Quantity { get; set; }
         public decimal PurchasePrice { get; set; }
