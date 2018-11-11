@@ -14,5 +14,6 @@ namespace ContractingCompany.Models.Office{
         public bool? isSysAdmin { get; set; }
         [StringLength(200)]
         public string Description { get; set; }
+        
     }
 }
