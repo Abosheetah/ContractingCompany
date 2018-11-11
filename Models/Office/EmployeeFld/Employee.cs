@@ -1,7 +1,9 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using ContractingCompany.Models.Office.CareerFld;
 
-namespace ContractingCompany.Models.Office{
+namespace ContractingCompany.Models.Office.EmployeeFld{
     public class Employee
     {
         [Key]
@@ -16,6 +18,8 @@ namespace ContractingCompany.Models.Office{
         public Career Career { get; set; }
         public bool Gender { get; set; }
         public decimal Salary { get; set; }
+        [Description("هل هذا الموظف مسؤول مشتريات نعم أم لا")]
+        public bool? isProcurementOfficials { get; set; }
         [StringLength(200)]
         public string Description { get; set; }
 

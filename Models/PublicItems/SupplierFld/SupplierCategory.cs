@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ContractingCompany.Models.PublicItems.Product{
-    public class ProductCategory
+namespace ContractingCompany.Models.PublicItems.SupplierFld{
+    public class SupplierCategory
     {
         [Key]
         public int ID { get; set; }

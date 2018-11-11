@@ -1,11 +1,11 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ContractingCompany.Models.PublicItems.Supplier{
-    public class SupplierCategory
-    {
+namespace ContractingCompany.Models.Office.CareerFld{
+    public class CareerType{
         [Key]
         public int ID { get; set; }
         [Required]
+        [Display(Name = "Office Career Type")]
         public string Name { get; set; }
         [StringLength(200)]
         public string Description { get; set; }

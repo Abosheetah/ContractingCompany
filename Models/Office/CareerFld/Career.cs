@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ContractingCompany.Models.Office{
+namespace ContractingCompany.Models.Office.CareerFld{
     public class Career{
         [Key]
         public int ID { get; set; }

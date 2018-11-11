@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace ContractingCompany.Models.PublicItems.Supplier{
+namespace ContractingCompany.Models.PublicItems.SupplierFld{
     public interface ISupplierRepo
     {
         IQueryable<Supplier> Suppliers {get;}
