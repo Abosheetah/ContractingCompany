@@ -1,0 +1,42 @@
+@model IEnumerable<CareerType>
+<h3 class="p-2 bg-primary text-white text-center">Products</h3> 
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-1 font-weight-bold">Id</div>
+        <div class="col font-weight-bold">Name</div> 
+        <div class="col font-weight-bold">Description</div>
+        <div class="col font-weight-bold"></div>
+    </div>    
+        <form asp-action="AddCareerType" method="POST">
+            <div class="row p-2"> 
+                <div class="col-1"></div>        
+                <div class="col">
+                    <input name="Name" class="form-control">
+                </div>          
+                <div class="col">
+                    <input name="Description" class="form-control">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" type="submit">Save</button>
+                </div>
+            </div>
+        </form>            
+</div>
+
+@foreach (var p in Model)
+{
+    <div class="card card-outline-primary p-1 m-2">
+        <div class="bg-faded p-1">
+            <h4>
+                @p.Name
+                <span class="badge badge-pill badge-primary" style="float:right">
+                    <small>@p.Name</small>
+                </span>
+            </h4>
+        </div>
+        <div class="card-text p-1">@p.Description
+            <a asp-action="UpdateCareerType" asp-route-key="@p.ID" class="btn btn-outline-primary" style="float: right">Edit</a>  
+        </div>
+        
+    </div>
+}
