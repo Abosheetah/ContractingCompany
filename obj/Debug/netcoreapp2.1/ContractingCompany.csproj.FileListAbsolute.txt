@@ -24,3 +24,6 @@ E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.RazorTargetAssemblyInfo.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.Views.pdb
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.csproj.CopyComplete
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout3.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_app-header-nav.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_app-header.g.cshtml.cs
