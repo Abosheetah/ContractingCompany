@@ -63,7 +63,7 @@ using ContractingCompany.Models.Office.CareerFld;
         ");
             EndContext();
             BeginContext(401, 570, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2521a56de5f455e9ee5eba9a0c7a0d1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ede3e9827c7e46b0b63b1c072da3cd63", async() => {
                 BeginContext(448, 516, true);
                 WriteLiteral(@"
             <div class=""row p-2""> 
@@ -141,7 +141,7 @@ using ContractingCompany.Models.Office.CareerFld;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1407, 116, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6108982b0ed244b6b432849933372723", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "550d32c525e14a2a9043917c1aca6ced", async() => {
                 BeginContext(1515, 4, true);
                 WriteLiteral("Edit");
                 EndContext();

@@ -4,14 +4,16 @@ using ContractingCompany.Models.CCDBContextFld;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ContractingCompany.Migrations
 {
     [DbContext(typeof(CCDBContext))]
-    partial class CCDBContextModelSnapshot : ModelSnapshot
+    [Migration("20181114082257_operations")]
+    partial class operations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

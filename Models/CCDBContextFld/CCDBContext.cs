@@ -30,7 +30,7 @@ namespace ContractingCompany.Models.CCDBContextFld{
                 new Career{ID = 1, Name = "رئيس مجلس الإدارة" , CareerTypeID = 1 , isSysAdmin = true , isSysUser = true , Description =""},
                 new Career{ID = 2, Name = "محاسب" , CareerTypeID = 1 , isSysAdmin = true , isSysUser = true , Description =""},
                 new Career{ID = 3, Name = "عامل بوفيه" , CareerTypeID = 1 , isSysAdmin = false , isSysUser = false , Description =""});
-            
+
             //Employee
             modelBuilder.Entity<Employee>().HasData(
                 new Employee{ID = 1 , Name = "أسامة محمود" , Gender = true , isProcurementOfficials = true , CareerID = 2 , NationalNumber = "12345678912345" ,Salary  = 5000 , Description ="Nothing"},
@@ -86,10 +86,15 @@ namespace ContractingCompany.Models.CCDBContextFld{
                 new EquipmentCalculationMethod {ID = 2 , Name = "بالساعة"  ,  Description ="قياس بالساعة الانتاجية"}
             );
 
-             //Operation Equipment
+            //Operation Equipment
             modelBuilder.Entity<OperationEquipment>().HasData(
-                new OperationEquipment{ID = 1,EquipmentCalculationMethodID = 1 , EquipmentID = 2 , OperationGeneralDataID  = 1 ,AgreementDate = DateTime.Now.Date, AddedDate =DateTime.Now.Date , UpdatedDate = DateTime.Now.Date , Description = ""}
-                
+                new OperationEquipment{ID = 1,EquipmentCalculationMethodID = 1 , EquipmentID = 2 , OperationGeneralDataID  = 1 ,AgreementDate = DateTime.Now.Date, AddedDate =DateTime.Now.Date , UpdatedDate = DateTime.Now.Date , Description = ""},
+                new OperationEquipment{ID = 2,EquipmentCalculationMethodID = 2 , EquipmentID = 1 , OperationGeneralDataID  = 1 ,AgreementDate = DateTime.Now.Date, AddedDate =DateTime.Now.Date , UpdatedDate = DateTime.Now.Date , Description = ""}
+            );
+
+            //Operation Equipment
+            modelBuilder.Entity<OperationGeneralData>().HasData(
+                new OperationGeneralData{ID = 1 , Name ="عملية رأي البر", StartDate = DateTime.Now.Date ,Location = "رأس البر" ,Description = "" }
             );
 
 
