@@ -1,18 +1,24 @@
+@model CareerType
 <h3 class="p-2 bg-primary text-white text-center">إضافة نوع وظيفة جديدة</h3> 
 <div class="container-fluid mt-3">      
     <form asp-action="AddCareerType" method="POST">
         <div class="row p-2"> 
             <div class="col-1"></div>        
             <div class="col">
-                <strong>Name :</strong>
+                <label asp-for="Name" class="font-weight-bold"></label>
                 <input name="Name" class="form-control">
             </div>          
             <div class="col">
-                <strong>Description :</strong>
-                <input name="Description" class="form-control">                    
+                <label asp-for="Description" class="font-weight-bold"></label>
+                <input name="Description" class="form-control">                                    
             </div>
-            <div class="col">                    
-                <button class="btn btn-primary mt-4" type="submit">Save</button>
+            <div class="col">                     
+                <div class="row">
+                   <label class="font-weight-bold text-white">|</label>                    
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary" type="submit">Save</button>
+                </div>                                              
             </div>
         </div>
     </form>            
