@@ -53,3 +53,4 @@ H:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.Views.pdb
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.dll
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.pdb
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.csproj.CopyComplete
+H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\CareerType\AddCareerType.g.cshtml.cs

@@ -9,30 +9,25 @@
             .placeholder { visibility: collapse; display: none }
         </style>
     </head>
-    <body>
-      <h3 class="p-2 bg-primary text-white text-center">MAM</h3> 
-        <div class="container">
-            <div class="row p-2">
-                <div class="col-2">
-                    <a asp-controller="CareerType" asp-action="List" class="@GetClassForButton("CareerType")">Career Type</a>
-                </div>
-                <div class="col-2">
-                    <a asp-controller="CareerType" asp-action="List" class="@GetClassForButton("CareerType")">Career Type</a>
-                </div>                               
+    <body>   
+        <div class="navbar navbar-inverse bg-inverse" role="navigation">
+            <a class="navbar-brand" href="#">Contracting Company</a>
+        </div>
+        <div class="row m-1 p-1">
+            <div id="" class="col-2">
+                <a asp-controller="CareerType" asp-action="List" class="@GetClassForButton("CareerType")">Career Type</a>
+                <a asp-controller="CareerType" asp-action="List" class="@GetClassForButton("CareerType")">Career Type</a>
             </div>
-        </div>   
-
-        <main role="main" class="container body-content">                
-            @RenderBody()
-            <hr />
-        </main>
-        
+            <div class="col-8">
+                @RenderBody()
+                <hr />
+            </div>
+        </div>
         <footer class="container">
             <p>&copy; 2018 - Muhammad Abosheetah</p>
         </footer>
     </body>
 </html>
-
 @functions {
     string GetClassForButton(string controller) {
         return "btn btn-block " + (ViewContext.RouteData.Values["controller"]

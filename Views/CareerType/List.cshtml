@@ -1,28 +1,15 @@
 @model IEnumerable<CareerType>
-<h3 class="p-2 bg-primary text-white text-center">Products</h3> 
-<div class="container-fluid mt-3">
-    <div class="row">
-        <div class="col-1 font-weight-bold">Id</div>
-        <div class="col font-weight-bold">Name</div> 
-        <div class="col font-weight-bold">Description</div>
-        <div class="col font-weight-bold"></div>
-    </div>    
-        <form asp-action="AddCareerType" method="POST">
-            <div class="row p-2"> 
-                <div class="col-1"></div>        
-                <div class="col">
-                    <input name="Name" class="form-control">
-                </div>          
-                <div class="col">
-                    <input name="Description" class="form-control">
-                </div>
-                <div class="col">
-                    <button class="btn btn-primary" type="submit">Save</button>
-                </div>
-            </div>
-        </form>            
-</div>
+<h3 class="p-2 bg-primary text-white text-center">قائمة  أنواع الوظائف</h3> 
 
+<div class="container">
+    <div class="row p-2">
+        <div class="col-2">
+            <a method="get" asp-controller="CareerType" asp-action="AddCareerType">Add New</a>
+        </div>                              
+    </div>
+</div> 
+
+ 
 @foreach (var p in Model)
 {
     <div class="card card-outline-primary p-1 m-2">

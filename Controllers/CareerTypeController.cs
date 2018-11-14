@@ -11,5 +11,16 @@ namespace ContractingCompany.Controllers{
         public IActionResult List(){
             return View(_db.CareerTypes);
         }
+        
+        [HttpGet]
+        public IActionResult AddCareerType(){
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddCareerType(CareerType careerType){
+            _db.AddCareerType(careerType);
+            return View(RedirectToAction(nameof(List)));
+        }
     }    
 }

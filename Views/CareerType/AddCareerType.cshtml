@@ -1,0 +1,19 @@
+<h3 class="p-2 bg-primary text-white text-center">إضافة نوع وظيفة جديدة</h3> 
+<div class="container-fluid mt-3">      
+    <form asp-action="AddCareerType" method="POST">
+        <div class="row p-2"> 
+            <div class="col-1"></div>        
+            <div class="col">
+                <strong>Name :</strong>
+                <input name="Name" class="form-control">
+            </div>          
+            <div class="col">
+                <strong>Description :</strong>
+                <input name="Description" class="form-control">                    
+            </div>
+            <div class="col">                    
+                <button class="btn btn-primary mt-4" type="submit">Save</button>
+            </div>
+        </div>
+    </form>            
+</div>
