@@ -24,9 +24,6 @@ E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.RazorTargetAssemblyInfo.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.Views.pdb
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.csproj.CopyComplete
-E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout3.g.cshtml.cs
-E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_app-header-nav.g.cshtml.cs
-E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_app-header.g.cshtml.cs
 H:\ContractingCompany\bin\Debug\netcoreapp2.1\ContractingCompany.deps.json
 H:\ContractingCompany\bin\Debug\netcoreapp2.1\ContractingCompany.runtimeconfig.json
 H:\ContractingCompany\bin\Debug\netcoreapp2.1\ContractingCompany.runtimeconfig.dev.json
@@ -54,3 +51,5 @@ H:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.dll
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.pdb
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.csproj.CopyComplete
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\CareerType\AddCareerType.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\CareerType\AddCareerType.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\CareerType\UpdateCareerType.g.cshtml.cs

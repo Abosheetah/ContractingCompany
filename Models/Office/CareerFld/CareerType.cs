@@ -5,7 +5,7 @@ namespace ContractingCompany.Models.Office.CareerFld{
         [Key]
         public int ID { get; set; }
         [Required(ErrorMessage="Career Type Name is Required")]
-        [Display(Name = "Office Career Type")]
+        [Display(Name = "اسم نوعية الوظيفة")]
         public string Name { get; set; }
         [StringLength(200)]
         public string Description { get; set; }

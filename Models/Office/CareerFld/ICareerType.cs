@@ -5,6 +5,7 @@ namespace ContractingCompany.Models.Office.CareerFld{
     {
         IQueryable<CareerType> CareerTypes {get;}
         void AddCareerType(CareerType careerType);
+        CareerType GetCareerType(int id);
         void UpdateCareerType(CareerType careerType);
         void DeleteCareerType(CareerType careerType);
     }

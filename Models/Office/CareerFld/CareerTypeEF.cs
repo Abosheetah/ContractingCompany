@@ -31,6 +31,11 @@ namespace ContractingCompany.Models.Office.CareerFld{
             }
         }
 
+        public CareerType GetCareerType(int id)
+        {
+            return _db.CareerTypes.Find(id);
+        }
+
         public void UpdateCareerType(CareerType careerType)
         {
             _db.CareerTypes.Update(careerType);

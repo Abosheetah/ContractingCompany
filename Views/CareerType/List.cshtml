@@ -3,8 +3,8 @@
 
 <div class="container">
     <div class="row p-2">
-        <div class="col-2">
-            <a method="get" asp-controller="CareerType" asp-action="AddCareerType">Add New</a>
+        <div class="col-2">            
+            <a method="get" class="btn btn-primary" asp-controller="CareerType" asp-action="AddCareerType">Add New</a>
         </div>                              
     </div>
 </div> 
@@ -20,10 +20,10 @@
                     <small>@p.Name</small>
                 </span>
             </h4>
-        </div>
+        </div>        
         <div class="card-text p-1">@p.Description
-            <a asp-action="UpdateCareerType" asp-route-key="@p.ID" class="btn btn-outline-primary" style="float: right">Edit</a>  
-        </div>
-        
+            <a asp asp-action="UpdateCareerType" asp-route-id="@p.ID" class="btn btn-outline-primary" style="float: right">Edit</a>
+            <a asp asp-action="DeleteCareerType" asp-route-id="@p.ID" class="btn btn-outline-danger mr-2" style="float: right">Delete</a>  
+        </div>        
     </div>
 }
