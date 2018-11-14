@@ -6,6 +6,11 @@ using ContractingCompany.Models.PublicItems.ProductFld;
 using ContractingCompany.Models.PublicItems.SupplierFld;
 using ContractingCompany.Models.PublicItems.EquipmentFld;
 using Microsoft.EntityFrameworkCore;
+using ContractingCompany.Models.OperationFld.OperationCareerFld;
+using ContractingCompany.Models.OperationFld.OperationEquipmentFld;
+using ContractingCompany.Models.OperationFld.OperationGeneralDataFld;
+using ContractingCompany.Models.OperationFld.WorkTimeFld;
+using System;
 
 namespace ContractingCompany.Models.CCDBContextFld{
     public class CCDBContext : DbContext
@@ -58,10 +63,37 @@ namespace ContractingCompany.Models.CCDBContextFld{
                 new Equipment{ID = 2 , Name = "MRT98 FGH" , Code = "123456" , Barcode = "123456" , DependencyID = 1 ,EquipmentTypeID = 2 , Model = "1998" , ChassisNo ="125543"}
             );
 
+            //Equipment Default Measurement Type
             modelBuilder.Entity<EquipmentDefaultMeasurementType>().HasData(
                 new EquipmentDefaultMeasurementType{ID = 1 , Name ="متر مكعب",Description = "يتم الحساب على قياس المتر المكعب"},
                 new EquipmentDefaultMeasurementType{ID = 2 ,Name = "بالارتفاع" ,Description = ""}
             );
+            //Operation Career
+            modelBuilder.Entity<OperationCareer>().HasData(
+                new OperationCareer{ID = 1 , Name = "سائق بلدوزر",isSysSubAdmin = false , isSysSubUser = false , Description ="يعمل على البلدوزر بشكل أساسي"},
+                new OperationCareer {ID =  2 ,Name = "تباع",isSysSubAdmin = false  , isSysSubUser =false  , Description = "تباع" },
+                new OperationCareer {ID = 3 , Name = "محاسب عملية ",isSysSubAdmin = true , isSysSubUser = true , Description="مخول له ادارة حسابات العملية والتسجيل على الكمبيوتر"});
+            
+            //Operation Employees
+            modelBuilder.Entity<OperationEmployee>().HasData(
+                new OperationEmployee{ID = 1 , OperationCareerID = 2 , Name = "محمود سلامة النويجع" , Address = "مدينة نصر" , Salary = 5600 },
+                new OperationEmployee{ID = 2 , OperationCareerID = 3 , Name = "تامر كمال المحمودي" , Address = "مدينة نصر" , Salary = 3500 }
+            );
+
+            //Equipment Calculation Methods
+            modelBuilder.Entity<EquipmentCalculationMethod>().HasData(
+                new EquipmentCalculationMethod{ID = 1 , Name = "بالمتر" , Description = "بالمتر المكعب"},
+                new EquipmentCalculationMethod {ID = 2 , Name = "بالساعة"  ,  Description ="قياس بالساعة الانتاجية"}
+            );
+
+             //Operation Equipment
+            modelBuilder.Entity<OperationEquipment>().HasData(
+                new OperationEquipment{ID = 1,EquipmentCalculationMethodID = 1 , EquipmentID = 2 , OperationGeneralDataID  = 1 ,AgreementDate = DateTime.Now.Date, AddedDate =DateTime.Now.Date , UpdatedDate = DateTime.Now.Date , Description = ""}
+                
+            );
+
+
+
         }                
 
 
@@ -93,6 +125,15 @@ namespace ContractingCompany.Models.CCDBContextFld{
             DbSet<DependencyEquipment> DependencyEquipments {get;set;}
             DbSet<EquipmentDefaultMeasurementType_Equipment> EquipmentDefaultMeasurementType_Equipments {get;set;}
             DbSet<Equipment> Equipments {get;set;}
+        #endregion
+        #region Operation
+            DbSet<OperationCareer> OperationCareers {get;set;}
+            DbSet<OperationEmployee> OperationEmployees {get;set;}
+            DbSet<EquipmentCalculationMethod> EquipmentCalculationMethods {get;set;}
+            DbSet<OperationEquipment> OperationEquipments {get;set;}
+            DbSet<OperationGeneralData> OperationGeneralDatas {get;set;}
+            DbSet<OperationWorkTime> OperationWorkTimes {get;set;}
+
         #endregion
         
 
