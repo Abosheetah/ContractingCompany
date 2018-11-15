@@ -53,3 +53,5 @@ H:\ContractingCompany\obj\Debug\netcoreapp2.1\ContractingCompany.csproj.CopyComp
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\CareerType\AddCareerType.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\CareerType\AddCareerType.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\CareerType\UpdateCareerType.g.cshtml.cs
+H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\CareerType\UpdateCareerType.g.cshtml.cs
+H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Career\List.g.cshtml.cs

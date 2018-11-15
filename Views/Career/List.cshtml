@@ -1,0 +1,29 @@
+@model IEnumerable<Career>
+<h3 class="p-2 bg-primary text-white text-center">قائمة  أسماء الوظائف</h3> 
+<div class="container">
+    <div class="row p-2">
+        <div class="col-2">            
+            <a method="get" class="btn btn-primary" asp-controller="CareerType" asp-action="AddCareer">Add New</a>
+        </div>                              
+    </div>
+</div>  
+@foreach (var p in Model)
+{
+    <div class="card card-outline-primary p-1 m-2">
+        <div class="bg-faded p-1">
+            <h4>
+                @p.Name
+                <span class="badge badge-pill badge-primary" style="float:right">
+                    <small>@p.CareerType.Name</small>
+                </span>
+            </h4>
+        </div>        
+        <div class="card-text p-1">
+            @p.Description 
+            (@(p.isSysUser == true ? "مستخدم نظام" : "غير مستخدم نظام" ))
+            (@(p.isSysAdmin == true ? "مسؤول نظام" : "غير مسؤول نظام" ))                        
+            <a asp asp-action="AddCareer" asp-route-id="@p.ID" class="btn btn-outline-primary" style="float: right">Edit</a>
+            <a asp asp-action="AddCareer" asp-route-id="@p.ID" class="btn btn-outline-danger mr-2" style="float: right">Delete</a>  
+        </div>        
+    </div>
+}

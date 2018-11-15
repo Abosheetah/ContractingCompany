@@ -21,6 +21,7 @@ namespace ContractingCompany
         {
             services.AddDbContext<CCDBContext>(options => options.UseSqlServer(Configuration["Data:ContractingCompany:ConnectionString"]));
             services.AddTransient<ICareerType,CareerTypeEF>();
+            services.AddTransient<ICareer,CareerEF>();
             services.AddMvc();
             
         }

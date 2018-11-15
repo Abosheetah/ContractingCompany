@@ -8,5 +8,6 @@ namespace ContractingCompany.Models.Office.CareerFld{
         CareerType GetCareerType(int id);
         void UpdateCareerType(CareerType careerType);
         void DeleteCareerType(CareerType careerType);
+        
     }
 }
