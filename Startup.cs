@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ContractingCompany.Models.CCDBContextFld;
 using ContractingCompany.Models.Office.CareerFld;
+using ContractingCompany.Models.Office.EmployeeFld;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -22,6 +23,7 @@ namespace ContractingCompany
             services.AddDbContext<CCDBContext>(options => options.UseSqlServer(Configuration["Data:ContractingCompany:ConnectionString"]));
             services.AddTransient<ICareerType,CareerTypeEF>();
             services.AddTransient<ICareer,CareerEF>();
+            services.AddTransient<IEmployee,EmployeeEF>();
             services.AddMvc();
             
         }

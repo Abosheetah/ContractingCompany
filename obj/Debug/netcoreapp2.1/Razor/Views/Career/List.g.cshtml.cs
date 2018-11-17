@@ -18,8 +18,13 @@ using ContractingCompany.Models.Office.CareerFld;
 
 #line default
 #line hidden
+#line 2 "E:\ContractingCompany\Views\_ViewImports.cshtml"
+using ContractingCompany.Models.Office.EmployeeFld;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3b75d6e1543832385de0e4a0fb4c60a003b3f2ec", @"/Views/Career/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0fb9671930ce6d6de6af64545a8cca6b8ea95ed8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f7f25f7a144cea26c8fc0aa9f09661260e42d0a0", @"/Views/_ViewImports.cshtml")]
     public class Views_Career_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Career>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", new global::Microsoft.AspNetCore.Html.HtmlString("get"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -57,7 +62,7 @@ using ContractingCompany.Models.Office.CareerFld;
             WriteLiteral("<h3 class=\"p-2 bg-primary text-white text-center\">قائمة  أسماء الوظائف</h3> \r\n<div class=\"container\">\r\n    <div class=\"row p-2\">\r\n        <div class=\"col-2\">            \r\n            ");
             EndContext();
             BeginContext(211, 98, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "691bafcd04bc459a837e49ea1d435c8a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ac3d7df97c644b03aa3151f3f5ee4b39", async() => {
                 BeginContext(298, 7, true);
                 WriteLiteral("Add New");
                 EndContext();
@@ -142,7 +147,7 @@ using ContractingCompany.Models.Office.CareerFld;
             WriteLiteral("                        \r\n            ");
             EndContext();
             BeginContext(970, 115, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6949ba89d0124ce6ae6b24d59e39b8ca", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f720d4144c104bb1ae8d1e067226b16c", async() => {
                 BeginContext(1077, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -182,7 +187,7 @@ using ContractingCompany.Models.Office.CareerFld;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1099, 121, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "12b342c79576440b97364da61e672787", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "675d08df5739484191bdec65808dbff4", async() => {
                 BeginContext(1210, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

@@ -1,0 +1,62 @@
+@model Employee
+<h3 class="p-2 bg-primary text-white text-center">إضافة وظيفة جديدة</h3> 
+<div class="container-fluid mt-3">      
+    <form asp-action="AddEmployee" method="POST"> 
+
+        <div class="form-group">           
+                <label asp-for="Name" class="font-weight-bold"></label>
+                <input name="Name" class="form-control" rows="5">         
+            
+                <label asp-for="NationalNumber" class="font-weight-bold"></label>
+                <input name="NationalNumber" class="form-control" rows="5">
+
+                <label asp-for="Salary" class="font-weight-bold"></label>
+                <input name="Salary" class="form-control" rows="5">
+
+                <label asp-for="CareerID" class="font-weight-bold"></label>  
+                <select asp-for="CareerID"   
+                    class="form-control"   
+                    asp-items="@(new SelectList(@ViewBag.Careers,"ID", "Name"))">  
+                </select>          
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-0"></div>
+                <div class="col-3">
+                    <div class="radio-inline">                  
+                        <input asp-for="Gender" type="radio" name="Male" value="true" checked />                   
+                        <label asp-for="Gender">Male</label>
+                        <input asp-for="Gender" type="radio" name="Female" value="false" />
+                        <label asp-for="Gender">Female</label>
+                    </div>
+                </div>             
+            </div> 
+        </div>
+
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-0"></div>
+                <div class="col-3">                  
+                    <div class="checkbox">
+                        <input type="checkbox" asp-for="isProcurementOfficials" />
+                        <label asp-for="isProcurementOfficials"> Procurement Officials</label>
+                    </div>
+                </div>             
+            </div> 
+        </div>
+
+        <div class="form-group">                                                                
+            <label asp-for="Description" class="font-weight-bold"></label>
+            <input name="Description" class="form-control">                                                            
+        </div>   
+        
+        <div class="text-right">
+            <div class="form-group">                      
+                <button class="btn btn-primary"  type="submit">Save</button>                      
+            </div>  
+        </div>                                                               
+
+    </form>            
+</div>

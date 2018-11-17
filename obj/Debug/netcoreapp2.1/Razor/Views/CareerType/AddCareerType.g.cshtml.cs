@@ -18,8 +18,13 @@ using ContractingCompany.Models.Office.CareerFld;
 
 #line default
 #line hidden
+#line 2 "E:\ContractingCompany\Views\_ViewImports.cshtml"
+using ContractingCompany.Models.Office.EmployeeFld;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b542593feb8c5ce9abbf6536cab49142f3704e29", @"/Views/CareerType/AddCareerType.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0fb9671930ce6d6de6af64545a8cca6b8ea95ed8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f7f25f7a144cea26c8fc0aa9f09661260e42d0a0", @"/Views/_ViewImports.cshtml")]
     public class Views_CareerType_AddCareerType : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<CareerType>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("font-weight-bold"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -53,12 +58,12 @@ using ContractingCompany.Models.Office.CareerFld;
             WriteLiteral("<h3 class=\"p-2 bg-primary text-white text-center\">إضافة نوع وظيفة جديدة</h3> \r\n<div class=\"container-fluid mt-3\">      \r\n    ");
             EndContext();
             BeginContext(144, 989, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "db0db5f24c0f41f89d6a92f7b2f5f8e0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "af652b6e93b54ba5a7e0e632ddf0df0c", async() => {
                 BeginContext(191, 128, true);
                 WriteLiteral("\r\n        <div class=\"row p-2\"> \r\n            <div class=\"col-1\"></div>        \r\n            <div class=\"col\">\r\n                ");
                 EndContext();
                 BeginContext(319, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8abcf73febe4ea2b94ad025bffc8a5f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "529561fb280f45ce91c8d7851cfef8be", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper>();
@@ -82,7 +87,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n                <input name=\"Name\" class=\"form-control\">\r\n            </div>          \r\n            <div class=\"col\">\r\n                ");
                 EndContext();
                 BeginContext(511, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6d28cf7ce5148118e851ca115bc8918", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbffb36e29b7417ea623fdc6cd4711a9", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper>();
