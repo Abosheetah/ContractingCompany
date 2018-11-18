@@ -12,6 +12,12 @@ namespace ContractingCompany.Models.Office.CareerFld{
         }
         public IQueryable<Career> Careers => db.Careers.Include(i=>i.CareerType).AsQueryable();
 
+        public void AddCareer(Career career)
+        {
+            db.Careers.Add(career);
+            db.SaveChanges();
+        }
+
         public void DeleteCareer(Career career)
         {
             bool isExist = db.Employees.Where(i=> i.CareerID == career.ID).Any();
@@ -29,6 +35,11 @@ namespace ContractingCompany.Models.Office.CareerFld{
         public Career GetCareer(int id)
         {
             return db.Careers.Find(id);
+        }
+
+        public IQueryable<CareerType> GetCareerTypes()
+        {
+            return db.CareerTypes.AsQueryable();
         }
 
         public void UpdateCareer(Career career)

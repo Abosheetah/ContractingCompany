@@ -10,9 +10,9 @@ namespace ContractingCompany.Models.Office.CareerFld{
         [Required(ErrorMessage="Career Type is Required")]
         public int CareerTypeID { get; set; }
         [ForeignKey("CareerTypeID")]
-        public CareerType CareerType { get; set; }
-        public bool? isSysUser { get; set; }
-        public bool? isSysAdmin { get; set; }
+        public CareerType CareerType { get; set; }        
+        public bool isSysUser { get; set; } = false;
+        public bool isSysAdmin { get; set; } = false;
         [StringLength(200)]
         public string Description { get; set; }
         

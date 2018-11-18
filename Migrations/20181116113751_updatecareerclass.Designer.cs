@@ -4,14 +4,16 @@ using ContractingCompany.Models.CCDBContextFld;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ContractingCompany.Migrations
 {
     [DbContext(typeof(CCDBContext))]
-    partial class CCDBContextModelSnapshot : ModelSnapshot
+    [Migration("20181116113751_updatecareerclass")]
+    partial class updatecareerclass
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,9 +35,9 @@ namespace ContractingCompany.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<bool>("isSysAdmin");
+                    b.Property<bool?>("isSysAdmin");
 
-                    b.Property<bool>("isSysUser");
+                    b.Property<bool?>("isSysUser");
 
                     b.HasKey("ID");
 

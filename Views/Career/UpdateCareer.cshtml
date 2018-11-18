@@ -1,0 +1,49 @@
+@model Career
+<h3 class="p-2 bg-primary text-white text-center">تعديل اسم وظيفة جديدة</h3> 
+<div class="container-fluid mt-3">      
+    <form asp-action="UpdateCareer" method="POST">         
+        <div class="form-group">           
+                <label asp-for="Name" class="font-weight-bold"></label>
+                <input asp-for="Name" name="Name" class="form-control" rows="5">                     
+        </div>
+        
+        <div class="form-group">                         
+                <label asp-for="CareerTypeID" class="font-weight-bold"></label>  
+                <select asp-for="CareerTypeID"   
+                    class="form-control"   
+                    asp-items="@(new SelectList(@ViewBag.CareerTypes,"ID", "Name"))">  
+                </select>          
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-4">                  
+                    <div class="checkbox">
+                        <input type="checkbox" asp-for="isSysUser" />
+                        <label asp-for="isSysUser"> System User</label>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <div class="checkbox">
+                        <input type="checkbox" asp-for="isSysAdmin" />
+                        <label asp-for="isSysAdmin"> System Admin</label>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="form-group">                                                                
+            <label asp-for="Description" class="font-weight-bold"></label>
+            <input asp-for="Description" name="Description" class="form-control">                                                            
+        </div> 
+
+
+        <div class="text-center">
+            <button class="btn btn-primary" type="submit">Save</button>
+            <a asp-action="List" class="btn btn-secondary">Cancel</a>
+        </div>
+
+    </form>            
+</div>
