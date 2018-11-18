@@ -53,7 +53,7 @@ using ContractingCompany.Models.Office.CareerFld;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n    ");
             EndContext();
             BeginContext(29, 367, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "250e0be1aa044a249c49c9929aead98d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "79925ec8081b4081bfe17bbdcaf57c9e", async() => {
                 BeginContext(35, 354, true);
                 WriteLiteral(@"
         <meta name=""viewport"" content=""width=device-width"" />
@@ -81,12 +81,12 @@ using ContractingCompany.Models.Office.CareerFld;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(402, 742, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84434f53dbba4ee88e199cbfb203da44", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dca54e20633543f28071c611fb7945a1", async() => {
                 BeginContext(408, 255, true);
                 WriteLiteral("   \r\n        <div class=\"navbar navbar-inverse bg-inverse\" role=\"navigation\">\r\n            <a class=\"navbar-brand\" href=\"#\">Contracting Company</a>\r\n        </div>\r\n        <div class=\"row m-1 p-1\">\r\n            <div id=\"\" class=\"col-2\">\r\n                ");
                 EndContext();
                 BeginContext(663, 105, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8fa4b62e5544b0db8878e08e86f1f01", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6db2e35d2abe440d9ceadf60471e9cde", async() => {
                     BeginContext(753, 11, true);
                     WriteLiteral("Career Type");
                     EndContext();
@@ -117,7 +117,7 @@ AddHtmlAttributeValue("", 719, GetClassForButton("CareerType"), 719, 32, false);
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(786, 92, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a36340d2738f4e32a4de4fe7d0139317", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dfb6aae8ebc14d38b30b6df19e03281d", async() => {
                     BeginContext(868, 6, true);
                     WriteLiteral("Career");
                     EndContext();
