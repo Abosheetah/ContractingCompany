@@ -35,9 +35,9 @@ namespace ContractingCompany.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<bool?>("isSysAdmin");
+                    b.Property<bool>("isSysAdmin");
 
-                    b.Property<bool?>("isSysUser");
+                    b.Property<bool>("isSysUser");
 
                     b.HasKey("ID");
 
@@ -96,7 +96,7 @@ namespace ContractingCompany.Migrations
 
                     b.Property<decimal>("Salary");
 
-                    b.Property<bool?>("isProcurementOfficials");
+                    b.Property<bool>("isProcurementOfficials");
 
                     b.HasKey("ID");
 

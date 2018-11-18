@@ -92,7 +92,7 @@ namespace ContractingCompany.Models.CCDBContextFld{
                 new OperationEquipment{ID = 2,EquipmentCalculationMethodID = 2 , EquipmentID = 1 , OperationGeneralDataID  = 1 ,AgreementDate = DateTime.Now.Date, AddedDate =DateTime.Now.Date , UpdatedDate = DateTime.Now.Date , Description = ""}
             );
 
-            //Operation Equipment
+            //Operation General Data
             modelBuilder.Entity<OperationGeneralData>().HasData(
                 new OperationGeneralData{ID = 1 , Name ="عملية رأي البر", StartDate = DateTime.Now.Date ,Location = "رأس البر" ,Description = "" }
             );
