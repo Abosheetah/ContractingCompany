@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
@@ -58,8 +59,8 @@ namespace ContractingCompany.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: false),
                     CareerTypeID = table.Column<int>(nullable: false),
-                    isSysUser = table.Column<bool>(nullable: true),
-                    isSysAdmin = table.Column<bool>(nullable: true),
+                    isSysUser = table.Column<bool>(nullable: false),
+                    isSysAdmin = table.Column<bool>(nullable: false),
                     Description = table.Column<string>(maxLength: 200, nullable: true)
                 },
                 constraints: table =>
@@ -114,7 +115,7 @@ namespace ContractingCompany.Migrations
                     CareerID = table.Column<int>(nullable: false),
                     Gender = table.Column<bool>(nullable: false),
                     Salary = table.Column<decimal>(nullable: false),
-                    isProcurementOfficials = table.Column<bool>(nullable: true),
+                    isProcurementOfficials = table.Column<bool>(nullable: false),
                     Description = table.Column<string>(maxLength: 200, nullable: true)
                 },
                 constraints: table =>
