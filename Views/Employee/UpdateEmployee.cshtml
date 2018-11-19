@@ -1,7 +1,7 @@
 @model EmployeeViewModel
-<h3 class="p-2 bg-primary text-white text-center">إضافة موظف جديدة</h3> 
+<h3 class="p-2 bg-primary text-white text-center">تعديل بيانات موظف</h3> 
 <div class="container-fluid mt-3">      
-    <form  asp-action="AddEmployee" method="POST"> 
+    <form  asp-action="UpdateEmployee" method="POST"> 
 
         <div class="form-group">           
             <input asp-for="Employee.ID" name="Employee.ID" class="form-control" rows="5" hidden>
