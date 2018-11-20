@@ -59,6 +59,16 @@ namespace ContractingCompany.Models.PublicItems.SupplierFld{
            return _ctx.Suppliers.Find(Key);
         }
 
+        public void SetRemainderAmount(int Key, decimal remainderAmount)
+        {
+            Supplier supplier = _ctx.Suppliers.Find(Key);
+            supplier.RemainderAmount = remainderAmount;
+            supplier.DateRemainderAmount = DateTime.Now;
+            _ctx.Suppliers.Update(supplier);
+            _ctx.SaveChanges();
+
+        }
+
         public void UpdateSupplier(Supplier supplier)
         {
             _ctx.Suppliers.Update(supplier);

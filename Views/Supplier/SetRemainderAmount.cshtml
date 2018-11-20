@@ -1,0 +1,38 @@
+@model Supplier
+<h3 class="p-2 bg-primary text-white text-center">إعداد المبلغ المتبقي للمورد</h3> 
+<div class="container-fluid mt-3">      
+    <form  asp-action="SetRemainderAmount" method="POST"> 
+
+        <div class="form-group">
+
+            <input asp-for="ID" name="ID" class="form-control" rows="5" hidden>
+
+            <label asp-for="Name" class="font-weight-bold"></label>
+            <input asp-for="Name" name="Name" class="form-control" rows="5" readonly>         
+        
+            <label asp-for="CompanyName" class="font-weight-bold"></label>
+            <input asp-for="CompanyName" name="CompanyName" class="form-control" rows="5" readonly>                 
+
+            <label asp-for="RemainderAmount" class="font-weight-bold"></label>
+            <input asp-for="RemainderAmount" name="RemainderAmount" class="form-control" rows="5"> 
+
+
+            <input asp-for="SupplierCategoryID" name="SupplierCategoryID" class="form-control" rows="5" hidden>
+            <input asp-for="Address" name="Address" class="form-control" rows="5" hidden>
+            <input asp-for="City" name="City" class="form-control" rows="5" hidden>
+            <input asp-for="Mobile" name="Mobile" class="form-control" rows="5" hidden>
+            <input asp-for="Phone" name="Phone" class="form-control" rows="5" hidden>                              
+            <input asp-for="Fax" name="Fax" class="form-control" rows="5" hidden>                              
+            <input asp-for="DateRemainderAmount" name="DateRemainderAmount" class="form-control" rows="5" hidden>                              
+            <input asp-for="MAXDebtAmount" name="MAXDebtAmount" class="form-control" rows="5" hidden>                                           
+
+        </div>                  
+        
+        <div class="text-right">
+            <div class="form-group">                      
+                <button class="btn btn-primary"  type="submit">Save</button>                      
+            </div>  
+        </div>                                                               
+
+    </form>            
+</div>

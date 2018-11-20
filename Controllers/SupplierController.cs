@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using ContractingCompany.FormsTagHelper.ViewModels;
 using ContractingCompany.Models.PublicItems.SupplierFld;
@@ -41,6 +42,17 @@ namespace ContractingCompany.Controllers{
 
         public IActionResult DeleteSupplier(int id){
             _dal.DeleteSupplier(id);
+            return RedirectToAction(nameof(List));
+        }
+
+        [HttpGet]
+        public IActionResult SetRemainderAmount(int id){
+            return View(_dal.GetSupplier(id));
+        }
+
+         [HttpPost]
+        public IActionResult SetRemainderAmount(Supplier supplier){            
+            _dal.SetRemainderAmount(supplier.ID,supplier.RemainderAmount);
             return RedirectToAction(nameof(List));
         }
     }

@@ -74,3 +74,11 @@ H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\SupplierCategory\Updat
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Supplier\List.g.cshtml.cs
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Supplier\AddSupplier.g.cshtml.cs
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Supplier\UpdateSupplier.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\SupplierCategory\UpdateSupplierCategory.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Supplier\AddSupplier.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Supplier\List.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Supplier\UpdateSupplier.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Supplier\SetRemainderAmount.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\ProductCategory\List.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\ProductCategory\AddProductCategory.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\ProductCategory\UpdateProductCategory.g.cshtml.cs

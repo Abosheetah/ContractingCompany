@@ -9,6 +9,8 @@ namespace ContractingCompany.Models.PublicItems.SupplierFld{
         void AddSupplier(Supplier supplier);
         void UpdateSupplier(Supplier supplier);
         void DeleteSupplier(int Key);
+        void SetRemainderAmount(int Key,decimal remainderAmount);
+
 
     }
 }

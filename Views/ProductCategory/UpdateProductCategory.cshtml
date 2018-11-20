@@ -1,0 +1,26 @@
+@model ProductCategory
+<h3 class="p-2 bg-primary text-white text-center">تعديل فئة منتج جديد</h3> 
+<div class="container-fluid mt-3">      
+    <form  asp-action="UpdateProductCategory" method="POST"> 
+
+        <div class="form-group">           
+            <input asp-for="ID" name="Employee.ID" class="form-control" rows="5" hidden>
+
+            <label asp-for="Name" class="font-weight-bold"></label>
+            <input asp-for="Name" name="Name" class="form-control" rows="5">                         
+          
+        </div>       
+
+        <div class="form-group">                                                                
+            <label asp-for="Description" class="font-weight-bold"></label>
+            <input asp-for="Description" name="Description" class="form-control" rows="5">                                                           
+        </div>   
+        
+        <div class="text-right">
+            <div class="form-group">                      
+                <button class="btn btn-primary"  type="submit">Save</button>                      
+            </div>  
+        </div>                                                               
+
+    </form>            
+</div>

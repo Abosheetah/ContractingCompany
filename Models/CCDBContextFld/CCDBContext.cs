@@ -94,7 +94,14 @@ namespace ContractingCompany.Models.CCDBContextFld{
 
             //Operation General Data
             modelBuilder.Entity<OperationGeneralData>().HasData(
-                new OperationGeneralData{ID = 1 , Name ="عملية رأي البر", StartDate = DateTime.Now.Date ,Location = "رأس البر" ,Description = "" }
+                new OperationGeneralData{ID = 1 , Name ="عملية رأس البر", StartDate = DateTime.Now.Date ,Location = "رأس البر" ,Description = "" }
+            );
+
+            //Product Category
+            modelBuilder.Entity<ProductCategory>().HasData(
+                new ProductCategory{ID = 1 , Name = "زيوت" , Description = "مثال زيت معدة البلدوزر"},
+                new ProductCategory{ID = 2 , Name = "قطع غيار" , Description = "قطع غيار معدات"},
+                new ProductCategory{ID = 3 , Name = "هياكل"}
             );
 
 
