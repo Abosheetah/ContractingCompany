@@ -12,8 +12,9 @@ namespace ContractingCompany.Models.PublicItems.SupplierFld{
         public string Name { get; set; }
         [StringLength(200)]
         public string CompanyName { get; set; }
-        [StringLength(200)]
+        
         public int SupplierCategoryID { get; set; }
+
         [ForeignKey("SupplierCategoryID")]
         public SupplierCategory SupplierCategory { get; set; }
         public string Address { get; set; }
@@ -30,6 +31,7 @@ namespace ContractingCompany.Models.PublicItems.SupplierFld{
         public DateTime DateRemainderAmount { get; set; }
         public decimal MAXDebtAmount { get; set; }
         [DefaultValue(true)]
+        
         [Description("في حالة حذف المورد يتم فقط تحويل القيمة ل false")]
         public bool isActive { get; set; }
     }

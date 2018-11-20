@@ -26,6 +26,7 @@ namespace ContractingCompany
             services.AddTransient<ICareer,CareerEF>();
             services.AddTransient<IEmployee,EmployeeEF>();
             services.AddTransient<ISupplierCategory,SupplierCategoryEF>();
+            services.AddTransient<ISupplier,SupplierEF>();
             services.AddMvc();
             
         }

@@ -11,10 +11,8 @@ namespace ContractingCompany.Controllers{
             _tem = tem;
         }
 
-        public IActionResult List() => View(_tem.Employees);
-
-      
-
+        public IActionResult List() => View(_tem.Employees);      
+        
         public IActionResult AddEmployee(){
             var evm = new EmployeeViewModel();
             evm.Employee = new Employee();

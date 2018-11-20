@@ -1,0 +1,53 @@
+@model SupplierViewModel
+<h3 class="p-2 bg-primary text-white text-center">إضافة مورد جديدة</h3> 
+<div class="container-fluid mt-3">      
+    <form  asp-action="AddSupplier" method="POST"> 
+
+        <div class="form-group">
+
+            <input asp-for="Supplier.ID" name="Supplier.ID" class="form-control" rows="5" hidden>
+
+            <label asp-for="Supplier.Name" class="font-weight-bold"></label>
+            <input asp-for="Supplier.Name" name="Supplier.Name" class="form-control" rows="5">         
+        
+            <label asp-for="Supplier.CompanyName" class="font-weight-bold"></label>
+            <input asp-for="Supplier.CompanyName" name="Supplier.CompanyName" class="form-control" rows="5">
+
+           
+            <label asp-for="Supplier.SupplierCategoryID" class="font-weight-bold">Supplier Category</label>        
+            <select asp-items="Model.SupllierCategories" id="Supplier.SupplierCategoryID" name="Supplier.SupplierCategoryID" asp-for="Supplier.SupplierCategoryID"  class="form-control" rows="5"></select>
+           
+
+            <label asp-for="Supplier.Address" class="font-weight-bold"></label>
+            <input asp-for="Supplier.Address" name="Supplier.Address" class="form-control" rows="5">
+         
+
+            <label asp-for="Supplier.City" class="font-weight-bold"></label> 
+            <input asp-for="Supplier.City" name="Supplier.City" class="form-control" rows="5">
+                 
+        
+            <label asp-for="Supplier.Mobile" class="font-weight-bold"></label>  
+            <input asp-for="Supplier.Mobile" name="Supplier.Mobile" class="form-control" rows="5">
+                    
+
+            <label asp-for="Supplier.Phone" class="font-weight-bold"></label> 
+            <input asp-for="Supplier.Phone" name="Supplier.Phone" class="form-control" rows="5"> 
+                  
+
+            <label asp-for="Supplier.Fax" class="font-weight-bold"></label>
+            <input asp-for="Supplier.Fax" name="Supplier.Fax" class="form-control" rows="5">
+              
+
+            <label asp-for="Supplier.MAXDebtAmount" class="font-weight-bold"></label>
+            <input asp-for="Supplier.MAXDebtAmount" name="Supplier.MAXDebtAmount" class="form-control" rows="5">                               
+        
+        </div>                  
+        
+        <div class="text-right">
+            <div class="form-group">                      
+                <button class="btn btn-primary"  type="submit">Save</button>                      
+            </div>  
+        </div>                                                               
+
+    </form>            
+</div>
