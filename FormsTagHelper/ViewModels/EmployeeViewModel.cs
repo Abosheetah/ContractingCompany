@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace ContractingCompany.FormsTagHelper.ViewModels{
     public class EmployeeViewModel
     {
-        public Employee Employee;
-        public int CareerID;
+        public Employee Employee;        
         public List<SelectListItem> Careers;
     }
 }

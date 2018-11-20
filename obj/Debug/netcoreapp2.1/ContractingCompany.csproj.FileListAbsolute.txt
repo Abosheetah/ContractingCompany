@@ -65,3 +65,5 @@ H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Career\UpdateCareer.g.
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Employee\AddEmployee.g.cshtml.cs
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Employee\List.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Employee\UpdateEmployee.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\SupplierCategory\List.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\SupplierCategory\AddSupplierCategory.g.cshtml.cs

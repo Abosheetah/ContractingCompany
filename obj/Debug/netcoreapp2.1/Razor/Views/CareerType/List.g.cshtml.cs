@@ -28,8 +28,13 @@ using ContractingCompany.FormsTagHelper.ViewModels;
 
 #line default
 #line hidden
+#line 4 "E:\ContractingCompany\Views\_ViewImports.cshtml"
+using ContractingCompany.Models.PublicItems.SupplierFld;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eef3a21b75693f83c695f57638843ad50f2511a9", @"/Views/CareerType/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1ffd6f27f1b9db57418a87c9920fdd929005e553", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c80bdd911475016fd9751062fd8a653ddc43835f", @"/Views/_ViewImports.cshtml")]
     public class Views_CareerType_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<CareerType>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", new global::Microsoft.AspNetCore.Html.HtmlString("get"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -67,7 +72,7 @@ using ContractingCompany.FormsTagHelper.ViewModels;
             WriteLiteral("<h3 class=\"p-2 bg-primary text-white text-center\">قائمة  أنواع الوظائف</h3> \r\n<div class=\"container\">\r\n    <div class=\"row p-2\">\r\n        <div class=\"col-2\">            \r\n            ");
             EndContext();
             BeginContext(215, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4192636115a14168a8f93ca23484a506", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "898b4f2004d44a5b9bdb020fbc05b480", async() => {
                 BeginContext(310, 7, true);
                 WriteLiteral("Add New");
                 EndContext();
@@ -132,7 +137,7 @@ using ContractingCompany.FormsTagHelper.ViewModels;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(811, 119, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1e5e7a905a34be2b53df4e5980d1651", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45fff9c5be9b4ffc961c09fb6364f18f", async() => {
                 BeginContext(922, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -172,7 +177,7 @@ using ContractingCompany.FormsTagHelper.ViewModels;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(944, 125, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b457fda635754f39a034bf65207d68a9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "774487825c994eb8a19b857e43173cf5", async() => {
                 BeginContext(1059, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

@@ -16,14 +16,13 @@
             <input asp-for="Employee.Salary" name="Employee.Salary" class="form-control" rows="5">
 
             <label asp-for="Employee.CareerID" class="font-weight-bold"></label>  
-            <select asp-for="Employee.CareerID" class="form-control" asp-items="Model.Careers">  
-            </select>          
+            <select asp-for="Employee.CareerID" class="form-control" asp-items="Model.Careers"></select>          
         </div>
-
+ 
         <div class="form-group">          
-            <label >Gender</label>
-            <select asp-for="Employee.Gender" class="form-control"  rows="5">
-                <option selected="selected" value="true">-- Select Gender --</option>
+            <label asp-for="Employee.Gender">Gender</label>
+            <select id="Gender" name="Gender" asp-for="Employee.Gender" class="form-control" rows="5">
+                <option value="true" selected>-- Select Gender --</option>
                 <option value="true">Male</option>
                 <option value="false">Female</option>
             </select>              
