@@ -30,9 +30,10 @@ namespace ContractingCompany.Models.PublicItems.SupplierFld{
         [Description("يتم تجديد التاريخ بآخر تاريخ حركة تمت من المورد وفي حالة مردودات المشتريات يتم تعديل التاريخ ورقم المديونية بتاريخ ومديونية اخر حركة تمت")]
         public DateTime DateRemainderAmount { get; set; }
         public decimal MAXDebtAmount { get; set; }
+
         [DefaultValue(true)]
         
         [Description("في حالة حذف المورد يتم فقط تحويل القيمة ل false")]
-        public bool isActive { get; set; }
+        public bool isActive { get; set; } = true;
     }
 }

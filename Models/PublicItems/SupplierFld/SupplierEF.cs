@@ -10,7 +10,7 @@ namespace ContractingCompany.Models.PublicItems.SupplierFld{
         public SupplierEF(CCDBContext ctx){
             _ctx = ctx;
         }
-        public IQueryable<Supplier> Suppliers => _ctx.Suppliers.Include(x=> x.SupplierCategory).AsQueryable();
+        public IQueryable<Supplier> Suppliers => _ctx.Suppliers.Where(y=> y.isActive == true).Include(x=> x.SupplierCategory).AsQueryable();
 
         public IQueryable<SupplierCategory> SupplierCategories => _ctx.SupplierCategories.AsQueryable();
 
@@ -40,7 +40,9 @@ namespace ContractingCompany.Models.PublicItems.SupplierFld{
                 }
                 else
                 {
-                    _ctx.Suppliers.Remove(_ctx.Suppliers.Find(Key));
+                    Supplier supplier = _ctx.Suppliers.Find(Key);
+                    supplier.isActive = false;
+                    _ctx.Suppliers.Update(supplier);
                     _ctx.SaveChanges();
             
                 }

@@ -20,7 +20,7 @@ namespace ContractingCompany.Controllers{
         }
 
         [HttpPost]
-        public IActionResult AddSupplier(Supplier supplier ){
+        public IActionResult AddSupplier(Supplier supplier ){            
             _dal.AddSupplier(supplier);
             return RedirectToAction(nameof(List));
         }
