@@ -6,7 +6,7 @@ namespace ContractingCompany.Models.PublicItems.SupplierFld{
         IQueryable<SupplierCategory> SupplierCategories{get;} 
         SupplierCategory GetSupplierCategory(int Key);
         void AddSupplierCategory(SupplierCategory supplierCategory);
-        void UpdateSupplierCategory(int Key);
+        void UpdateSupplierCategory(SupplierCategory supplierCategory);
         void DeleteSupplierCategory(int Key);
 
     }

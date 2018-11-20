@@ -29,7 +29,7 @@ namespace ContractingCompany.Models.PublicItems.SupplierFld{
         {
             try
             {
-                bool isExist = _ctx.Suppliers.Select(i=> i.SupplierCategoryID).Any();
+                bool isExist = _ctx.Suppliers.Where(i=> i.SupplierCategoryID == Key).Any();
                 if (isExist)
                 {
                     throw new Exception("لايمكن حذف نوع المورد لارتباطه ببعض الموردين");
@@ -52,11 +52,11 @@ namespace ContractingCompany.Models.PublicItems.SupplierFld{
             return _ctx.SupplierCategories.Find(Key);
         }
 
-        public void UpdateSupplierCategory(int Key)
+        public void UpdateSupplierCategory(SupplierCategory supplierCategory)
         {
             try
             {
-                _ctx.SupplierCategories.Update(_ctx.SupplierCategories.Find(Key));
+                _ctx.SupplierCategories.Update(supplierCategory);
                 _ctx.SaveChanges();
             }
             catch (System.Exception)
