@@ -11,9 +11,9 @@ namespace ContractingCompany.Models.PublicItems.ProductFld{
         public ProductEF(CCDBContext ctx){            
             _ctx = ctx;
         }
-        public IQueryable<Product> Products => _ctx.Products.Include(i=> i.ProductCategory).Include(ii=>ii.Supplier).AsQueryable();
+        public IQueryable<Product> Products => _ctx.Products.Where(i=> i.isActive == true).Include(i=> i.ProductCategory).Include(ii=>ii.Supplier).AsQueryable();
         public IQueryable<ProductCategory> ProductCategories => _ctx.ProductCategories.AsQueryable();
-        public IQueryable<Supplier> Suppliers => _ctx.Suppliers.Include(i=>i.SupplierCategory).AsQueryable();        
+        public IQueryable<Supplier> Suppliers => _ctx.Suppliers.Where(i=> i.isActive == true).Include(i=>i.SupplierCategory).AsQueryable();        
 
         public void AddProduct(Product product)
         {

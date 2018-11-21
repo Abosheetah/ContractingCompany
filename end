@@ -1,0 +1,212 @@
+[33mcommit 3a6613c5edbec0c16f4dc1f169a7afd4697dee48[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mContractingCompany/master[m[33m)[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Wed Nov 21 08:46:32 2018 +0200
+
+    add product interface and ef class
+
+[33mcommit db377e27863aa94c7f3a7024a6fd913eb13936cb[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Tue Nov 20 23:57:12 2018 +0200
+
+    add product category => interface, data access layer, controller and view
+
+[33mcommit ff6d48336f9eeb8030a18a0f957b191ce2707453[m
+Author: = <=>
+Date:   Tue Nov 20 19:17:55 2018 +0200
+
+    update isActive property in supplier model
+
+[33mcommit 42b8d153f51d9a46ffc69755d28fc7ee2d102f30[m
+Author: = <=>
+Date:   Tue Nov 20 18:47:12 2018 +0200
+
+    add supplier - viewmodel,controller and view
+
+[33mcommit 8a6852751fd54e6d4378d958e8a687397a793755[m
+Author: = <=>
+Date:   Tue Nov 20 10:20:38 2018 +0200
+
+    add supplier category controller
+
+[33mcommit 068a4ca34d0bdd5a24e78683c7ca671653883917[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Tue Nov 20 09:04:39 2018 +0200
+
+    add supplier category model
+
+[33mcommit 7710c0ec1b954e5a9e9cb011c7368e372a001181[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Mon Nov 19 07:39:43 2018 +0200
+
+    update employee model and added employee view model
+
+[33mcommit 0f5d3b04a4817de8ac20cc5043c1566daa8694de[m
+Merge: b74b1bf d650c7d
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Mon Nov 19 00:16:14 2018 +0200
+
+    from 8:30 to 12:16 ala el fady
+
+[33mcommit b74b1bf03742dcdc3590c79f42f58d4aa620323e[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Mon Nov 19 00:13:11 2018 +0200
+
+    123
+
+[33mcommit d650c7dd61fc9355da841a7b0e6b042402bf436d[m
+Merge: e07924b d4ab403
+Author: = <=>
+Date:   Sun Nov 18 19:36:56 2018 +0200
+
+    18/11/2018"
+
+[33mcommit e07924b424de4d3c1ee03b766cd0e3915f88c4fd[m
+Author: = <=>
+Date:   Sun Nov 18 09:38:11 2018 +0200
+
+    18/11/2018
+
+[33mcommit d4ab403cb796949a3a7ee05cd46d3d5c86fa2f0a[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Sat Nov 17 09:12:46 2018 +0200
+
+    =17/11/2018
+
+[33mcommit 9238ae4bac63a937ecbfa2a341777056ce2c3886[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Fri Nov 16 16:05:20 2018 +0200
+
+    add career model,controller, view
+
+[33mcommit f87ca1e893e9c4a61d3998edcd798cbef4a7abf1[m
+Author: = <=>
+Date:   Thu Nov 15 18:29:19 2018 +0200
+
+    add career EF class
+
+[33mcommit 767a8d00aed12da1a393fb1eca32ff2910c92ca2[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Wed Nov 14 23:05:13 2018 +0200
+
+    11:05 PM
+
+[33mcommit 4d32585a334645cf6952df6291e17c2094666f83[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Wed Nov 14 22:15:10 2018 +0200
+
+    add CRUD career type transactions
+
+[33mcommit fe5d2e4da74c213ac833b6c0f0fbcc38bcf4ec03[m
+Author: = <=>
+Date:   Wed Nov 14 14:18:23 2018 +0200
+
+    update theme
+
+[33mcommit afdbc1ca458455ffe1d998929540f3098a40fc81[m
+Author: = <=>
+Date:   Wed Nov 14 10:27:29 2018 +0200
+
+    add migration to  seed data of Operation folder
+
+[33mcommit 88869331243819268e7d7708d19b5088c57120cc[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Wed Nov 14 09:00:11 2018 +0200
+
+    add seed data of Operation folder
+
+[33mcommit 8749dc779624c7af9a068d02621f071c19b8fdd6[m
+Author: = <=>
+Date:   Tue Nov 13 18:12:14 2018 +0200
+
+    add some  operation models
+
+[33mcommit ccda439e07e67a9bfa7e3c46d79d7367b26e15dc[m
+Merge: 569cca3 03fef45
+Author: = <=>
+Date:   Tue Nov 13 14:31:28 2018 +0200
+
+    add equipment models
+
+[33mcommit 569cca3c7a33f2625c0d633cd6b9d38a08a6513e[m
+Author: = <=>
+Date:   Tue Nov 13 09:41:35 2018 +0200
+
+    13/11/2018
+
+[33mcommit 03fef45148e3eb944b951dadaf232dfb59bfed04[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Tue Nov 13 08:12:46 2018 +0200
+
+    change bootstrap design
+
+[33mcommit d1608fcebb6dbbf088eccc416085fcf760eb7c97[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Tue Nov 13 06:58:07 2018 +0200
+
+    add supplier seed data
+
+[33mcommit 7d214be7147ee74ccd83f91f4e031a2251295efe[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Sun Nov 11 22:37:59 2018 +0200
+
+    add initial migration
+
+[33mcommit 76b0a9d8ea0402f9c46c9cb9d381674dd63a87f3[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Sun Nov 11 21:08:58 2018 +0200
+
+    add database context class
+
+[33mcommit 969ccf1de440628c81ba44d66babb747ab69c145[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Sun Nov 11 20:36:30 2018 +0200
+
+    add bower and bootstrap files
+
+[33mcommit a0d4b2dc694a8aa5431100e41c285bf1256f9287[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Sun Nov 11 20:27:18 2018 +0200
+
+    add Office Repository and Purchase Orders
+
+[33mcommit c02b1469a53a4ede1f7e150ab4fa393389525e4a[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Sun Nov 11 15:52:40 2018 +0200
+
+    add product folder and product category class
+
+[33mcommit 9ff49cc20008171b507ee227ef459f8ef449a465[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Sun Nov 11 14:42:39 2018 +0200
+
+    pull latest upadte
+
+[33mcommit d71adbc531cb69f20cdfe3e9b6367bd41c951e1f[m
+Author: = <=>
+Date:   Sun Nov 11 12:43:00 2018 +0200
+
+    change squence  of folders inside public items folderr
+
+[33mcommit 55c8719c1a190ba652c3af8f0f6e97224c20cb40[m
+Author: = <=>
+Date:   Sun Nov 11 11:27:12 2018 +0200
+
+    add supplier repo interface
+
+[33mcommit c092b34a94976876bf84278e7bc46d961ed005c0[m
+Author: = <=>
+Date:   Sun Nov 11 10:01:39 2018 +0200
+
+    initial on my job device
+
+[33mcommit 2d3335cb024b106461566a961be47671851421e1[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Sun Nov 11 08:43:22 2018 +0200
+
+    add supplier and supplier type  model
+
+[33mcommit 73f17e538656e489d32c762f90fb7d3c9ac5b4d5[m
+Author: Abosheetah <abosheetah@gmail.com>
+Date:   Sat Nov 10 19:30:09 2018 +0200
+
+    initial project

@@ -13,7 +13,7 @@ namespace ContractingCompany.Models.PublicItems.ProductFld{
         [StringLength(10)]
         public string Barcode { get; set; }
         public string ProductionCompanyName { get; set; }
-        public decimal? PurchasePrice { get; set; }
+        public decimal? PurchasePrice { get; set; } = 0;
         public int ProductCategoryID { get; set; }
         [ForeignKey("ProductCategoryID")]
         public ProductCategory ProductCategory { get; set; }

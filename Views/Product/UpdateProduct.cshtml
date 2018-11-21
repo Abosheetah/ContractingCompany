@@ -1,0 +1,48 @@
+@model ProductViewModel
+<h3 class="p-2 bg-primary text-white text-center">إضافة مورد جديدة</h3> 
+<div class="container-fluid mt-3">      
+    <form  asp-action="UpdateProduct" method="POST"> 
+
+        <div class="form-group">
+
+            <input asp-for="Product.ID" name="Product.ID" class="form-control" rows="5" hidden>
+
+            <label asp-for="Product.Name" class="font-weight-bold"></label>
+            <input asp-for="Product.Name" name="Product.Name" class="form-control" rows="5">         
+        
+            <label asp-for="Product.Code" class="font-weight-bold"></label>
+            <input asp-for="Product.Code" name="Product.Code" class="form-control" rows="5">
+
+            <label asp-for="Product.Barcode" class="font-weight-bold"></label>
+            <input asp-for="Product.Barcode" name="Product.Barcode" class="form-control" rows="5">
+
+            <label asp-for="Product.ProductionCompanyName" class="font-weight-bold"></label>
+            <input asp-for="Product.ProductionCompanyName" name="Product.ProductionCompanyName" class="form-control" rows="5">
+
+            <label asp-for="Product.PurchasePrice" class="font-weight-bold"></label>
+            <input asp-for="Product.PurchasePrice" name="Product.PurchasePrice" class="form-control" rows="5">
+
+           
+            <label asp-for="Product.ProductCategoryID" class="font-weight-bold"></label>        
+            <select asp-items="Model.ProductCategories"  asp-for="Product.ProductCategoryID"  class="form-control" rows="5"></select>
+           
+            <label asp-for="Product.DefaultSupplierID" class="font-weight-bold"></label>        
+            <select asp-items="Model.Suppliers"  asp-for="Product.DefaultSupplierID"  class="form-control" rows="5"></select>
+           
+
+            <label asp-for="Product.Description" class="font-weight-bold"></label>
+            <textarea  asp-for="Product.Description" name="Product.Description" class="form-control" rows="5"></textarea>
+         
+
+            <input asp-for="Product.isActive" name="Product.isActive" class="form-control" rows="5" value="True" hidden>                                 
+        
+        </div>                  
+        
+        <div class="text-right">
+            <div class="form-group">                      
+                <button class="btn btn-primary"  type="submit">Save</button>                      
+            </div>  
+        </div>                                                               
+
+    </form>            
+</div>
