@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using ContractingCompany.Models.CCDBContextFld;
 using ContractingCompany.Models.Office.CareerFld;
 using ContractingCompany.Models.Office.EmployeeFld;
+using ContractingCompany.Models.PublicItems.EquipmentFld;
 using ContractingCompany.Models.PublicItems.ProductFld;
 using ContractingCompany.Models.PublicItems.SupplierFld;
 using Microsoft.AspNetCore.Builder;
@@ -30,6 +31,7 @@ namespace ContractingCompany
             services.AddTransient<ISupplier,SupplierEF>();
             services.AddTransient<IProductCategory,ProductCategoryEF>();
             services.AddTransient<IProduct,ProductEF>();
+            services.AddTransient<IEquipmentType,EquipmentTypeEF>();
             services.AddMvc();
             
         }

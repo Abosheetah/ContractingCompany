@@ -1,0 +1,25 @@
+@model EquipmentType
+<h3 class="p-2 bg-primary text-white text-center">إضافة نوع معدة جديدة</h3> 
+<div class="container-fluid mt-3">      
+    <form asp-action="AddEquipmentType" method="POST">
+        <div class="row p-2"> 
+            <div class="col-1"></div>        
+            <div class="col">
+                <label asp-for="Name" class="font-weight-bold"></label>
+                <input name="Name" class="form-control">
+            </div>          
+            <div class="col">
+                <label asp-for="Description" class="font-weight-bold"></label>
+                <input name="Description" class="form-control">                                    
+            </div>
+            <div class="col">                     
+                <div class="row">
+                   <label class="font-weight-bold text-white">|</label>                    
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary" type="submit">Save</button>
+                </div>                                              
+            </div>
+        </div>
+    </form>            
+</div>

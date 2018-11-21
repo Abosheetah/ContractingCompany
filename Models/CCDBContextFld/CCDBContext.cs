@@ -139,19 +139,19 @@ namespace ContractingCompany.Models.CCDBContextFld{
             public DbSet<Supplier> Suppliers {get;set;} 
         #endregion        
         #region Equipment
-            DbSet<EquipmentType> EquipmentTypes {get;set;} 
-            DbSet<EquipmentDefaultMeasurementType> EquipmentDefaultMeasurementTypes {get;set;}
-            DbSet<DependencyEquipment> DependencyEquipments {get;set;}
-            DbSet<EquipmentDefaultMeasurementType_Equipment> EquipmentDefaultMeasurementType_Equipments {get;set;}
-            DbSet<Equipment> Equipments {get;set;}
+            public DbSet<EquipmentType> EquipmentTypes {get;set;} 
+            public DbSet<EquipmentDefaultMeasurementType> EquipmentDefaultMeasurementTypes {get;set;}
+            public DbSet<DependencyEquipment> DependencyEquipments {get;set;}
+            public DbSet<EquipmentDefaultMeasurementType_Equipment> EquipmentDefaultMeasurementType_Equipments {get;set;}
+            public DbSet<Equipment> Equipments {get;set;}
         #endregion
         #region Operation
-            DbSet<OperationCareer> OperationCareers {get;set;}
-            DbSet<OperationEmployee> OperationEmployees {get;set;}
-            DbSet<EquipmentCalculationMethod> EquipmentCalculationMethods {get;set;}
-            DbSet<OperationEquipment> OperationEquipments {get;set;}
-            DbSet<OperationGeneralData> OperationGeneralDatas {get;set;}
-            DbSet<OperationWorkTime> OperationWorkTimes {get;set;}
+            public DbSet<OperationCareer> OperationCareers {get;set;}
+            public DbSet<OperationEmployee> OperationEmployees {get;set;}
+            public DbSet<EquipmentCalculationMethod> EquipmentCalculationMethods {get;set;}
+            public DbSet<OperationEquipment> OperationEquipments {get;set;}
+            public DbSet<OperationGeneralData> OperationGeneralDatas {get;set;}
+            public DbSet<OperationWorkTime> OperationWorkTimes {get;set;}
 
         #endregion
         

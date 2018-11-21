@@ -90,3 +90,8 @@ H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Product\List.g.cshtml.
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Supplier\SetRemainderAmount.g.cshtml.cs
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Product\AddProduct.g.cshtml.cs
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Product\UpdateProduct.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Product\AddProduct.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Product\UpdateProduct.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentType\AddEquipmentType.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentType\List.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentType\UpdateEquipmentType.g.cshtml.cs
