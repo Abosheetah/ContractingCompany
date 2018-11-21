@@ -82,3 +82,4 @@ E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Supplier\SetRemainderA
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\ProductCategory\List.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\ProductCategory\AddProductCategory.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\ProductCategory\UpdateProductCategory.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Product\List.g.cshtml.cs

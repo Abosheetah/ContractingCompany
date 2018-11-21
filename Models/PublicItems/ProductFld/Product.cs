@@ -22,5 +22,6 @@ namespace ContractingCompany.Models.PublicItems.ProductFld{
         public Supplier Supplier { get; set; }
         [StringLength(200)]
         public string Description { get; set; }
+        public bool isActive{set;get;} = true;
     }
 }

@@ -104,6 +104,13 @@ namespace ContractingCompany.Models.CCDBContextFld{
                 new ProductCategory{ID = 3 , Name = "هياكل"}
             );
 
+            //product
+            modelBuilder.Entity<Product>().HasData(
+                new Product{ID = 1 , Name = "سكاترة لودر 506" ,  Code = "123" , Barcode = "123" , DefaultSupplierID = 1 , ProductCategoryID = 1 , ProductionCompanyName = "SSTDF" ,PurchasePrice = 5630 , Description = "Nothing" },
+
+                 new Product{ID = 2 , Name = "سكاترة لودر 59" ,  Code = "456" , Barcode = "456" , DefaultSupplierID = 1 , ProductCategoryID = 1 , ProductionCompanyName = "SSTDF" ,PurchasePrice = 15230 , Description = "Nothing" }
+            );
+
 
 
         }                
