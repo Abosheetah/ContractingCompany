@@ -82,7 +82,7 @@ using ContractingCompany.Models.PublicItems.EquipmentFld;
             WriteLiteral("<h3 class=\"p-2 bg-primary text-white text-center\">قائمة  فئات الأصناف</h3> \r\n<div class=\"container\">\r\n    <div class=\"row p-2\">\r\n        <div class=\"col-2\">             \r\n            ");
             EndContext();
             BeginContext(219, 116, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df748f84dddc464d84358b468e454ea7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ae1646f2c4284551b2dcc1afba3b8e59", async() => {
                 BeginContext(324, 7, true);
                 WriteLiteral("Add New");
                 EndContext();
@@ -147,7 +147,7 @@ using ContractingCompany.Models.PublicItems.EquipmentFld;
             WriteLiteral("                                   \r\n            ");
             EndContext();
             BeginContext(874, 125, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84f9e8b5279746fa95ef8b75be5b19b8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0577369743074a6482eee838ebc05925", async() => {
                 BeginContext(991, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -187,7 +187,7 @@ using ContractingCompany.Models.PublicItems.EquipmentFld;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1013, 130, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ce0032c502542c68a689262b5ead37c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "44dfc30185c24cd8b106f53435555e5d", async() => {
                 BeginContext(1133, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

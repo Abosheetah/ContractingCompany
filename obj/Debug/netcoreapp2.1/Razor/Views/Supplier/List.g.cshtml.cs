@@ -84,7 +84,7 @@ using ContractingCompany.Models.PublicItems.EquipmentFld;
             WriteLiteral("<h3 class=\"p-2 bg-primary text-white text-center\">قائمة  أسماء الموردين</h3> \r\n<div class=\"container\">\r\n    <div class=\"row p-2\">\r\n        <div class=\"col-2\">             \r\n            ");
             EndContext();
             BeginContext(214, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d9c5324e5414baab95aca9d0b57f9d8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "941808327fed44d3a7a9f94a0ba1fee0", async() => {
                 BeginContext(305, 7, true);
                 WriteLiteral("Add New");
                 EndContext();
@@ -159,7 +159,7 @@ using ContractingCompany.Models.PublicItems.EquipmentFld;
             WriteLiteral("<br>                                    \r\n            ");
             EndContext();
             BeginContext(881, 133, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "71501543dcd84d0f95f034f262da4a80", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00affcc031b54ef59308cd2d92ef6da7", async() => {
                 BeginContext(994, 16, true);
                 WriteLiteral("Remainder Amount");
                 EndContext();
@@ -199,7 +199,7 @@ using ContractingCompany.Models.PublicItems.EquipmentFld;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1028, 122, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0041a4e406a1424397349300e31ace25", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f18a6504123349a5b51418b9ac3e55f5", async() => {
                 BeginContext(1142, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -239,7 +239,7 @@ using ContractingCompany.Models.PublicItems.EquipmentFld;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1164, 123, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37c670d15d704568b8f9914d215adf8e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ebdfac18c144df2a922cec3e20154ef", async() => {
                 BeginContext(1277, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

@@ -31,7 +31,8 @@ namespace ContractingCompany
             services.AddTransient<ISupplier,SupplierEF>();
             services.AddTransient<IProductCategory,ProductCategoryEF>();
             services.AddTransient<IProduct,ProductEF>();
-            services.AddTransient<IEquipmentType,EquipmentTypeEF>();
+            services.AddTransient<IEquipmentType,EquipmentTypeEF>();            
+            services.AddTransient<IDependencyEquipment,DependencyEquipmentEF>();
             services.AddMvc();
             
         }

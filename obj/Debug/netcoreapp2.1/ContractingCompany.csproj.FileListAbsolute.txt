@@ -95,3 +95,6 @@ E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Product\UpdateProduct.
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentType\AddEquipmentType.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentType\List.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentType\UpdateEquipmentType.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\DependencyEquipment\AddDependencyEquipment.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\DependencyEquipment\List.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\DependencyEquipment\UpdateDependencyEquipment.g.cshtml.cs
