@@ -98,3 +98,6 @@ E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentType\UpdateEq
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\DependencyEquipment\AddDependencyEquipment.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\DependencyEquipment\List.g.cshtml.cs
 E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\DependencyEquipment\UpdateDependencyEquipment.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentDefaultMeasurementType\AddEquipmentDefaultMeasurementType.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentDefaultMeasurementType\List.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentDefaultMeasurementType\UpdateEquipmentDefaultMeasurementType.g.cshtml.cs
