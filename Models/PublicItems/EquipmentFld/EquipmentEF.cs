@@ -9,11 +9,12 @@ namespace ContractingCompany.Models.PublicItems.EquipmentFld{
         public EquipmentEF(CCDBContext ctx){
             _ctx = ctx;
         }
-        public IQueryable<Equipment> Equipments => _ctx.Equipments.AsQueryable();
+        public IQueryable<Equipment> Equipments => _ctx.Equipments.Where(i=> i.isActive == true).AsQueryable();
 
         public void AddEquipment(Equipment equipment)
         {
             _ctx.Equipments.Add(equipment);
+            _ctx.SaveChanges();
         }
 
         public void DeleteEquipment(int key)
@@ -37,10 +38,20 @@ namespace ContractingCompany.Models.PublicItems.EquipmentFld{
                 throw;
             }
         }
-        
+
+        public IQueryable<DependencyEquipment> GetDependencyEquipments()
+        {
+            return _ctx.DependencyEquipments.AsQueryable();
+        }
+
         public Equipment GetEquipment(int key)
         {
             return _ctx.Equipments.Find(key);
+        }
+
+        public IQueryable<EquipmentType> GetEquipmentTypes()
+        {
+            return _ctx.EquipmentTypes.AsQueryable();
         }
 
         public void UpdateEquipment(Equipment equipment)

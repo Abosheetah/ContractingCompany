@@ -1,0 +1,39 @@
+@model EquipmentViewModel
+<h3 class="p-2 bg-primary text-white text-center">إضافة موظف جديدة</h3> 
+<div class="container-fluid mt-3">      
+    <form  asp-action="UpdateEquipment" method="POST"> 
+
+        <div class="form-group">           
+            <input asp-for="Equipment.ID" name="Equipment.ID" class="form-control" rows="5" hidden>
+
+            <label asp-for="Equipment.Name" class="font-weight-bold"></label>
+            <input asp-for="Equipment.Name" name="Equipment.Name" class="form-control" rows="5">
+
+            <label asp-for="Equipment.EquipmentTypeID" class="font-weight-bold"></label>  
+            <select asp-for="Equipment.EquipmentTypeID" class="form-control" asp-items="Model.EquipmentTypes"></select>
+
+            <label asp-for="Equipment.DependencyID" class="font-weight-bold"></label>  
+            <select asp-for="Equipment.DependencyID" class="form-control" asp-items="Model.DependencyEquipments"></select>  
+
+            <label asp-for="Equipment.Code" class="font-weight-bold"></label>
+            <input asp-for="Equipment.Code" name="Equipment.Code" class="form-control" rows="5">
+
+            <label asp-for="Equipment.Barcode" class="font-weight-bold"></label>
+            <input asp-for="Equipment.Barcode" name="Equipment.Barcode" class="form-control" rows="5">
+
+            <label asp-for="Equipment.Model" class="font-weight-bold"></label>
+            <input asp-for="Equipment.Model" name="Equipment.Model" class="form-control" rows="5">
+
+            <label asp-for="Equipment.ChassisNo" class="font-weight-bold"></label>
+            <input asp-for="Equipment.ChassisNo" name="Equipment.ChassisNo" class="form-control" rows="5">            
+                    
+        </div>    
+        
+        <div class="text-right">
+            <div class="form-group">                      
+                <button class="btn btn-primary"  type="submit">Save</button>                      
+            </div>  
+        </div>                                                               
+
+    </form>            
+</div>
