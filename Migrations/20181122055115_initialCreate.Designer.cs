@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContractingCompany.Migrations
 {
     [DbContext(typeof(CCDBContext))]
-    [Migration("20181116113751_updatecareerclass")]
-    partial class updatecareerclass
+    [Migration("20181122055115_initialCreate")]
+    partial class initialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,9 +35,9 @@ namespace ContractingCompany.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<bool?>("isSysAdmin");
+                    b.Property<bool>("isSysAdmin");
 
-                    b.Property<bool?>("isSysUser");
+                    b.Property<bool>("isSysUser");
 
                     b.HasKey("ID");
 
@@ -96,7 +96,7 @@ namespace ContractingCompany.Migrations
 
                     b.Property<decimal>("Salary");
 
-                    b.Property<bool?>("isProcurementOfficials");
+                    b.Property<bool>("isProcurementOfficials");
 
                     b.HasKey("ID");
 
@@ -292,8 +292,8 @@ namespace ContractingCompany.Migrations
                     b.ToTable("OperationEquipments");
 
                     b.HasData(
-                        new { ID = 1, AddedDate = new DateTime(2018, 11, 16, 0, 0, 0, 0, DateTimeKind.Local), AgreementDate = new DateTime(2018, 11, 16, 0, 0, 0, 0, DateTimeKind.Local), Description = "", EquipmentCalculationMethodID = 1, EquipmentID = 2, OperationGeneralDataID = 1, UpdatedDate = new DateTime(2018, 11, 16, 0, 0, 0, 0, DateTimeKind.Local) },
-                        new { ID = 2, AddedDate = new DateTime(2018, 11, 16, 0, 0, 0, 0, DateTimeKind.Local), AgreementDate = new DateTime(2018, 11, 16, 0, 0, 0, 0, DateTimeKind.Local), Description = "", EquipmentCalculationMethodID = 2, EquipmentID = 1, OperationGeneralDataID = 1, UpdatedDate = new DateTime(2018, 11, 16, 0, 0, 0, 0, DateTimeKind.Local) }
+                        new { ID = 1, AddedDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local), AgreementDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local), Description = "", EquipmentCalculationMethodID = 1, EquipmentID = 2, OperationGeneralDataID = 1, UpdatedDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local) },
+                        new { ID = 2, AddedDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local), AgreementDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local), Description = "", EquipmentCalculationMethodID = 2, EquipmentID = 1, OperationGeneralDataID = 1, UpdatedDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local) }
                     );
                 });
 
@@ -320,7 +320,7 @@ namespace ContractingCompany.Migrations
                     b.ToTable("OperationGeneralDatas");
 
                     b.HasData(
-                        new { ID = 1, Description = "", EndDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), Location = "رأس البر", Name = "عملية رأي البر", StartDate = new DateTime(2018, 11, 16, 0, 0, 0, 0, DateTimeKind.Local) }
+                        new { ID = 1, Description = "", EndDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), Location = "رأس البر", Name = "عملية رأس البر", StartDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local) }
                     );
                 });
 
@@ -402,6 +402,8 @@ namespace ContractingCompany.Migrations
                         .IsRequired()
                         .HasMaxLength(150);
 
+                    b.Property<bool>("isActive");
+
                     b.HasKey("ID");
 
                     b.HasIndex("DependencyID");
@@ -411,8 +413,8 @@ namespace ContractingCompany.Migrations
                     b.ToTable("Equipments");
 
                     b.HasData(
-                        new { ID = 1, Barcode = "123456", ChassisNo = "125543", Code = "123456", DependencyID = 1, EquipmentTypeID = 1, Model = "2010", Name = "AX25 BU" },
-                        new { ID = 2, Barcode = "123456", ChassisNo = "125543", Code = "123456", DependencyID = 1, EquipmentTypeID = 2, Model = "1998", Name = "MRT98 FGH" }
+                        new { ID = 1, Barcode = "123456", ChassisNo = "125543", Code = "123456", DependencyID = 1, EquipmentTypeID = 1, Model = "2010", Name = "AX25 BU", isActive = true },
+                        new { ID = 2, Barcode = "123456", ChassisNo = "125543", Code = "123456", DependencyID = 1, EquipmentTypeID = 2, Model = "1998", Name = "MRT98 FGH", isActive = true }
                     );
                 });
 
@@ -513,6 +515,8 @@ namespace ContractingCompany.Migrations
 
                     b.Property<decimal?>("PurchasePrice");
 
+                    b.Property<bool>("isActive");
+
                     b.HasKey("ID");
 
                     b.HasIndex("DefaultSupplierID");
@@ -520,6 +524,11 @@ namespace ContractingCompany.Migrations
                     b.HasIndex("ProductCategoryID");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new { ID = 1, Barcode = "123", Code = "123", DefaultSupplierID = 1, Description = "Nothing", Name = "سكاترة لودر 506", ProductCategoryID = 1, ProductionCompanyName = "SSTDF", PurchasePrice = 5630m, isActive = true },
+                        new { ID = 2, Barcode = "456", Code = "456", DefaultSupplierID = 1, Description = "Nothing", Name = "سكاترة لودر 59", ProductCategoryID = 1, ProductionCompanyName = "SSTDF", PurchasePrice = 15230m, isActive = true }
+                    );
                 });
 
             modelBuilder.Entity("ContractingCompany.Models.PublicItems.ProductFld.ProductCategory", b =>
@@ -537,6 +546,12 @@ namespace ContractingCompany.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("ProductCategories");
+
+                    b.HasData(
+                        new { ID = 1, Description = "مثال زيت معدة البلدوزر", Name = "زيوت" },
+                        new { ID = 2, Description = "قطع غيار معدات", Name = "قطع غيار" },
+                        new { ID = 3, Name = "هياكل" }
+                    );
                 });
 
             modelBuilder.Entity("ContractingCompany.Models.PublicItems.SupplierFld.Supplier", b =>
@@ -569,8 +584,7 @@ namespace ContractingCompany.Migrations
 
                     b.Property<decimal>("RemainderAmount");
 
-                    b.Property<int>("SupplierCategoryID")
-                        .HasMaxLength(200);
+                    b.Property<int>("SupplierCategoryID");
 
                     b.Property<bool>("isActive");
 

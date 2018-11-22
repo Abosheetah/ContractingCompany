@@ -23,5 +23,6 @@ namespace ContractingCompany.Models.PublicItems.EquipmentFld{
         public string Model { get; set; }
         [StringLength(20)]
         public string ChassisNo { get; set; }
+        public bool isActive{get;set;} = true;
     }
 }

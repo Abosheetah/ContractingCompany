@@ -290,8 +290,8 @@ namespace ContractingCompany.Migrations
                     b.ToTable("OperationEquipments");
 
                     b.HasData(
-                        new { ID = 1, AddedDate = new DateTime(2018, 11, 21, 0, 0, 0, 0, DateTimeKind.Local), AgreementDate = new DateTime(2018, 11, 21, 0, 0, 0, 0, DateTimeKind.Local), Description = "", EquipmentCalculationMethodID = 1, EquipmentID = 2, OperationGeneralDataID = 1, UpdatedDate = new DateTime(2018, 11, 21, 0, 0, 0, 0, DateTimeKind.Local) },
-                        new { ID = 2, AddedDate = new DateTime(2018, 11, 21, 0, 0, 0, 0, DateTimeKind.Local), AgreementDate = new DateTime(2018, 11, 21, 0, 0, 0, 0, DateTimeKind.Local), Description = "", EquipmentCalculationMethodID = 2, EquipmentID = 1, OperationGeneralDataID = 1, UpdatedDate = new DateTime(2018, 11, 21, 0, 0, 0, 0, DateTimeKind.Local) }
+                        new { ID = 1, AddedDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local), AgreementDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local), Description = "", EquipmentCalculationMethodID = 1, EquipmentID = 2, OperationGeneralDataID = 1, UpdatedDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local) },
+                        new { ID = 2, AddedDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local), AgreementDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local), Description = "", EquipmentCalculationMethodID = 2, EquipmentID = 1, OperationGeneralDataID = 1, UpdatedDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local) }
                     );
                 });
 
@@ -318,7 +318,7 @@ namespace ContractingCompany.Migrations
                     b.ToTable("OperationGeneralDatas");
 
                     b.HasData(
-                        new { ID = 1, Description = "", EndDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), Location = "رأس البر", Name = "عملية رأس البر", StartDate = new DateTime(2018, 11, 21, 0, 0, 0, 0, DateTimeKind.Local) }
+                        new { ID = 1, Description = "", EndDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), Location = "رأس البر", Name = "عملية رأس البر", StartDate = new DateTime(2018, 11, 22, 0, 0, 0, 0, DateTimeKind.Local) }
                     );
                 });
 
@@ -400,6 +400,8 @@ namespace ContractingCompany.Migrations
                         .IsRequired()
                         .HasMaxLength(150);
 
+                    b.Property<bool>("isActive");
+
                     b.HasKey("ID");
 
                     b.HasIndex("DependencyID");
@@ -409,8 +411,8 @@ namespace ContractingCompany.Migrations
                     b.ToTable("Equipments");
 
                     b.HasData(
-                        new { ID = 1, Barcode = "123456", ChassisNo = "125543", Code = "123456", DependencyID = 1, EquipmentTypeID = 1, Model = "2010", Name = "AX25 BU" },
-                        new { ID = 2, Barcode = "123456", ChassisNo = "125543", Code = "123456", DependencyID = 1, EquipmentTypeID = 2, Model = "1998", Name = "MRT98 FGH" }
+                        new { ID = 1, Barcode = "123456", ChassisNo = "125543", Code = "123456", DependencyID = 1, EquipmentTypeID = 1, Model = "2010", Name = "AX25 BU", isActive = true },
+                        new { ID = 2, Barcode = "123456", ChassisNo = "125543", Code = "123456", DependencyID = 1, EquipmentTypeID = 2, Model = "1998", Name = "MRT98 FGH", isActive = true }
                     );
                 });
 
