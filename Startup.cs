@@ -35,6 +35,8 @@ namespace ContractingCompany
             services.AddTransient<IDependencyEquipment,DependencyEquipmentEF>();            
             services.AddTransient<IEquipmentDefaultMeasurementType,EquipmentDefaultMeasurementTypeEF>();            
             services.AddTransient<IEquipment,EquipmentEF>();
+            services.AddTransient<IEquipmentDefaultMeasurementType_Equipment,EquipmentDefaultMeasurementType_EquipmentEF>();
+            
 
             services.AddMvc();
             

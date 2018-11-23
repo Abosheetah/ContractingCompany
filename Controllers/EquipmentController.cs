@@ -19,6 +19,7 @@ namespace ContractingCompany.Controllers{
             evm.DependencyEquipments = _dal.GetDependencyEquipments().Select(i=> new SelectListItem(){Value = i.ID.ToString(),Text=i.Name}).ToList();
             evm.EquipmentTypes = _dal.GetEquipmentTypes().Select(i=> new SelectListItem() {Value = i.ID.ToString() , Text = i.Name}).ToList();
            return View(evm);
+           
         }
 
         [HttpPost]

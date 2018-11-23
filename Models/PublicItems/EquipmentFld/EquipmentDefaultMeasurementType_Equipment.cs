@@ -18,7 +18,7 @@ namespace ContractingCompany.Models.PublicItems.EquipmentFld{
         [Required]
         [StringLength(150)]
         public string MeasureName { get; set; }
-        public DateTime AddedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public DateTime AddedDate { get; set; } = DateTime.Now;
+        public DateTime UpdatedDate { get; set; } = DateTime.Now;
     }
 }

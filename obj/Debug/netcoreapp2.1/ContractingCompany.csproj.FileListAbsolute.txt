@@ -113,3 +113,9 @@ H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentType\UpdateEq
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Equipment\List.g.cshtml.cs
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Equipment\AddEquipment.g.cshtml.cs
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Equipment\UpdateEquipment.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Equipment\AddEquipment.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Equipment\List.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Equipment\UpdateEquipment.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentDefaultMeasurementType_Equipment\List.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentDefaultMeasurementType_Equipment\AddEDMTE.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentDefaultMeasurementType_Equipment\UpdateEDMTE.g.cshtml.cs
