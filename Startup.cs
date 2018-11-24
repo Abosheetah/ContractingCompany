@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using ContractingCompany.Models.CCDBContextFld;
 using ContractingCompany.Models.Office.CareerFld;
 using ContractingCompany.Models.Office.EmployeeFld;
+using ContractingCompany.Models.Office.OfficeRepositoryFld;
 using ContractingCompany.Models.PublicItems.EquipmentFld;
 using ContractingCompany.Models.PublicItems.ProductFld;
 using ContractingCompany.Models.PublicItems.SupplierFld;
@@ -36,7 +37,7 @@ namespace ContractingCompany
             services.AddTransient<IEquipmentDefaultMeasurementType,EquipmentDefaultMeasurementTypeEF>();            
             services.AddTransient<IEquipment,EquipmentEF>();
             services.AddTransient<IEquipmentDefaultMeasurementType_Equipment,EquipmentDefaultMeasurementType_EquipmentEF>();
-            
+            services.AddTransient<IOfficeRepository,OfficeRepositoryEF>();
 
             services.AddMvc();
             
