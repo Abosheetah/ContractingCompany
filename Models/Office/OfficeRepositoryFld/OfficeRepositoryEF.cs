@@ -1,5 +1,6 @@
 using System.Linq;
 using ContractingCompany.Models.CCDBContextFld;
+using ContractingCompany.Models.PublicItems.ProductFld;
 using Microsoft.EntityFrameworkCore;
 
 namespace ContractingCompany.Models.Office.OfficeRepositoryFld{
@@ -11,6 +12,9 @@ namespace ContractingCompany.Models.Office.OfficeRepositoryFld{
         }
         public IQueryable<OfficeRepository> OfficeRepositories => _ctx.OfficeRepositories.Include(i=> i.Product).ThenInclude(ii=> ii.ProductCategory).AsQueryable();
 
+        public IQueryable<Product> Products => _ctx.Products.Where(c=> !_ctx.OfficeRepositories.Select(s=> s.ProductID).Contains(c.ID));
+
+        
         public void AddOfficeRepository(OfficeRepository officeRepository)
         {
             _ctx.OfficeRepositories.Add(officeRepository);

@@ -2,26 +2,24 @@
 <h3 class="p-2 bg-primary text-white text-center">قائمة  جرد المخزن العام</h3> 
 <form  asp-action="UpdateAll" method="POST"> 
     <div class="container-fluid">
-        <table class="table">
+        <table class="table table-sm table-striped">
             <thead>
                 <tr>
                 <th scope="col" hidden>ID</th>
                 <th scope="col">Product</th>
                 <th scope="col">Code</th>
                 <th scope="col">Barcode</th>
-                <th scope="col">Category</th>
                 <th scope="col">Quantity</th>
                 </tr>
             </thead>
-        @foreach (var p in Model)
+        @foreach (var p in ViewBag.Products)
         {
             <tr>
-                <td scope="row" hidden>@p.ID</td>
-                <td name="@p.Product.Name" value="@p.Product.Name"></td>
-                <td name="@p.Product.Code" value="@p.Product.Code"></td>
-                <td name="@p.Product.Barcode" value="@p.Product.Barcode"></td>
-                <td name="@p.Product.ProductCategory.Name" value="@p.Product.ProductCategory.Name"></td>
-                <td><input  name="@p.Quantity" value="@p.Quantity" class="form-control"></td>
+                <td asp-for="" scope="row" hidden>@p.ID</td>                
+                <td name="@p.Name" value="@p.Name">@p.Name</td>
+                <td name="@p.Code" value="@p.Code">@p.Code</td>
+                <td name="@p.Barcode" value="@p.Barcode">@p.Barcode</td>
+                <td><input  class="form-control" value="0"></td>            
             </tr>
         }
         </table>
