@@ -94,7 +94,7 @@ using ContractingCompany.Models.Office.OfficeRepositoryFld;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n    ");
             EndContext();
             BeginContext(29, 367, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a014cf67960b42378bf359f26a57a31f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "430c5683dda545f2be50f562070a2ea6", async() => {
                 BeginContext(35, 354, true);
                 WriteLiteral(@"
         <meta name=""viewport"" content=""width=device-width"" />
@@ -122,12 +122,12 @@ using ContractingCompany.Models.Office.OfficeRepositoryFld;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(402, 2288, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26eda8dad07349fb8c37730b3294f972", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2bde767209b1474fbd507c496f4bc217", async() => {
                 BeginContext(408, 255, true);
                 WriteLiteral("   \r\n        <div class=\"navbar navbar-inverse bg-inverse\" role=\"navigation\">\r\n            <a class=\"navbar-brand\" href=\"#\">Contracting Company</a>\r\n        </div>\r\n        <div class=\"row m-1 p-1\">\r\n            <div id=\"\" class=\"col-2\">\r\n                ");
                 EndContext();
                 BeginContext(663, 105, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d6016f23a7e44ffb646a70db1eda56e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9330e81552d4d52a357738a6f75dc92", async() => {
                     BeginContext(753, 11, true);
                     WriteLiteral("Career Type");
                     EndContext();
@@ -158,7 +158,7 @@ AddHtmlAttributeValue("", 719, GetClassForButton("CareerType"), 719, 32, false);
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(786, 92, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e452ffa4cd6b495682e6d27323589711", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "75574e60b68f4c8db3593769cc31076a", async() => {
                     BeginContext(868, 6, true);
                     WriteLiteral("Career");
                     EndContext();
@@ -189,7 +189,7 @@ AddHtmlAttributeValue("", 838, GetClassForButton("Career"), 838, 28, false);
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(896, 98, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b43ae2d9c6724d24bb721b3531dc6ffc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6a5b22178d345fd88112e05fa8606f2", async() => {
                     BeginContext(982, 8, true);
                     WriteLiteral("Employee");
                     EndContext();
@@ -220,7 +220,7 @@ AddHtmlAttributeValue("", 950, GetClassForButton("Employee"), 950, 30, false);
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1012, 123, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4af85e0753634f96bedea41c2d682b27", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cb49ce66c14b4e54af5babedebfe0b62", async() => {
                     BeginContext(1114, 17, true);
                     WriteLiteral("Supplier Category");
                     EndContext();
@@ -251,7 +251,7 @@ AddHtmlAttributeValue("", 1074, GetClassForButton("SupplierCategory"), 1074, 38,
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1153, 98, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "913845b4754341a4baf5ba11865a1eb8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e5568cc5f692471f8ce51ec6bf81a402", async() => {
                     BeginContext(1239, 8, true);
                     WriteLiteral("Supplier");
                     EndContext();
@@ -282,7 +282,7 @@ AddHtmlAttributeValue("", 1207, GetClassForButton("Supplier"), 1207, 30, false);
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1269, 120, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb533de357b4481b6582e46c081ee84", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "62ae8684257f4488a936dc75df6f72de", async() => {
                     BeginContext(1369, 16, true);
                     WriteLiteral("Product Category");
                     EndContext();
@@ -313,7 +313,7 @@ AddHtmlAttributeValue("", 1330, GetClassForButton("ProductCategory"), 1330, 37, 
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1407, 95, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4fdc4d8ea6c546d8b39033185a632e05", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2edc525a7832401a8e71f0eb6b7ace2f", async() => {
                     BeginContext(1491, 7, true);
                     WriteLiteral("Product");
                     EndContext();
@@ -344,7 +344,7 @@ AddHtmlAttributeValue("", 1460, GetClassForButton("Product"), 1460, 29, false);
                 WriteLiteral("    \r\n                ");
                 EndContext();
                 BeginContext(1524, 114, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "daf0b928ccbf477bb303342948656e74", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9267a44859814edaa3067f5a3d9a3f64", async() => {
                     BeginContext(1620, 14, true);
                     WriteLiteral("Equipment Type");
                     EndContext();
@@ -375,7 +375,7 @@ AddHtmlAttributeValue("", 1583, GetClassForButton("EquipmentType"), 1583, 35, fa
                 WriteLiteral("    \r\n                ");
                 EndContext();
                 BeginContext(1660, 132, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fa7456bf9aa4bb48236088e3bcc9344", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dd5e11f3e2dd478aad7853de553beb2f", async() => {
                     BeginContext(1768, 20, true);
                     WriteLiteral("Dependency Equipment");
                     EndContext();
@@ -406,7 +406,7 @@ AddHtmlAttributeValue("", 1725, GetClassForButton("DependencyEquipment"), 1725, 
                 WriteLiteral("    \r\n                ");
                 EndContext();
                 BeginContext(1814, 153, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e4a0eba3398475982d543ee5719ffa2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22640067caa748f7b8061d245a113506", async() => {
                     BeginContext(1946, 17, true);
                     WriteLiteral("Equipment Measure");
                     EndContext();
@@ -437,7 +437,7 @@ AddHtmlAttributeValue("", 1891, GetClassForButton("EquipmentDefaultMeasurementTy
                 WriteLiteral("    \r\n                ");
                 EndContext();
                 BeginContext(1989, 101, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07770b686b3845d991d6998d648393fb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8ebe93749254ce3b0ff09dc5aa3e42a", async() => {
                     BeginContext(2077, 9, true);
                     WriteLiteral("Equipment");
                     EndContext();
@@ -468,7 +468,7 @@ AddHtmlAttributeValue("", 2044, GetClassForButton("Equipment"), 2044, 31, false)
                 WriteLiteral("    \r\n                ");
                 EndContext();
                 BeginContext(2112, 161, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e1c4cbbcd9549b6a92b2b0a941d41e4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8b59d5f0606443b93b7be1fdf0f3e2b", async() => {
                     BeginContext(2264, 5, true);
                     WriteLiteral("EDMTE");
                     EndContext();
@@ -499,7 +499,7 @@ AddHtmlAttributeValue("", 2199, GetClassForButton("EquipmentDefaultMeasurementTy
                 WriteLiteral("    \r\n                ");
                 EndContext();
                 BeginContext(2295, 123, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9de6f9da07341ff973a68d77316ab9f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0da3312856a24c11a8b4b997093ca044", async() => {
                     BeginContext(2397, 17, true);
                     WriteLiteral("Office Repository");
                     EndContext();

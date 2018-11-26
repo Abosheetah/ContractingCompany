@@ -13,7 +13,7 @@
                 </tr>
             </thead>
         @foreach (var p in ViewBag.Products)
-        {
+        {         
             <tr>
                 <td asp-for="" scope="row" hidden>@p.ID</td>                
                 <td name="@p.Name" value="@p.Name">@p.Name</td>
