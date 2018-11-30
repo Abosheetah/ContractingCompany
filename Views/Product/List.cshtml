@@ -20,8 +20,9 @@
         </div>        
         <div class="card-text p-1">
             @p.ProductionCompanyName<span class="tab-pane"></span>@p.Supplier.Name<br>                                    
+            <a asp asp-action="UpdateQuantity" asp-route-id="@p.ID" class="btn btn-outline-info mr-2" style="float: right">Qty</a>  
             <a asp asp-action="UpdateProduct" asp-route-id="@p.ID" class="btn btn-outline-primary mr-2" style="float: right">Edit</a>
-            <a asp asp-action="DeleteProduct" asp-route-id="@p.ID" class="btn btn-outline-danger mr-2" style="float: right">Delete</a>  
+            <a asp asp-action="DeleteProduct" asp-route-id="@p.ID" class="btn btn-outline-danger mr-2" style="float: right">Delete</a>
         </div>        
     </div>
 }

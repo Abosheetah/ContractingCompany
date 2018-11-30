@@ -1,5 +1,6 @@
 using System.Linq;
 using ContractingCompany.FormsTagHelper.ViewModels;
+using ContractingCompany.Models.Office.OfficeRepositoryFld;
 using ContractingCompany.Models.PublicItems.ProductFld;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -7,8 +8,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace ContractingCompany.Controllers{
     public class ProductController : Controller{
         private IProduct _dal ;
-        public ProductController(IProduct dal){
+        private IOfficeRepository _offDal ;
+        public ProductController(IProduct dal,IOfficeRepository offDal){
             _dal = dal;
+            _offDal = offDal;
         }
         public IActionResult List() => View(_dal.Products);
 
@@ -50,6 +53,28 @@ namespace ContractingCompany.Controllers{
             return RedirectToAction(nameof(List));
         }
 
+        public IActionResult UpdateQuantity(int id){
+            Product product = _dal.GetProduct(id);
+            OfficeRepository officeRepository = _offDal.OfficeRepositories.Where(i => i.ProductID == id).Any() ? _offDal.GetOfficeRepositoryByProductID(id) : new OfficeRepository(){ID = 0 ,ProductID = product.ID, Product = product,Quantity = 0};
+            return View(officeRepository);
+        }
+
+        [HttpPost]
+        public IActionResult UpdateQuantity(OfficeRepository officeRepository){
+            bool isExist = _offDal.OfficeRepositories.Where(i => i.ProductID == officeRepository.ProductID).Any();
+            if (isExist)
+            {
+                int officeRepoID = _offDal.OfficeRepositories.Where(i => i.ProductID == officeRepository.ProductID).Select( o => o.ID).Single();
+                officeRepository.ID = officeRepoID;
+                _offDal.UpdateOfficeRepository(officeRepository);
+            }
+            else
+            {
+            officeRepository.ID = 0;
+            _offDal.AddOfficeRepository(officeRepository); 
+            }                                   
+            return RedirectToAction(nameof(List));
+        }
 
     }
 }

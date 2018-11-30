@@ -124,3 +124,4 @@ H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentDefaultMeasur
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentDefaultMeasurementType_Equipment\List.g.cshtml.cs
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\EquipmentDefaultMeasurementType_Equipment\UpdateEDMTE.g.cshtml.cs
 H:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\OfficeRepository\List.g.cshtml.cs
+E:\ContractingCompany\obj\Debug\netcoreapp2.1\Razor\Views\Product\UpdateQuantity.g.cshtml.cs

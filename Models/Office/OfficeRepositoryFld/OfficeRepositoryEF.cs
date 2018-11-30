@@ -11,9 +11,6 @@ namespace ContractingCompany.Models.Office.OfficeRepositoryFld{
             _ctx = ctx;
         }
         public IQueryable<OfficeRepository> OfficeRepositories => _ctx.OfficeRepositories.Include(i=> i.Product).ThenInclude(ii=> ii.ProductCategory).AsQueryable();
-
-        public IQueryable<Product> Products => _ctx.Products.Where(c=> !_ctx.OfficeRepositories.Select(s=> s.ProductID).Contains(c.ID));
-
         
         public void AddOfficeRepository(OfficeRepository officeRepository)
         {
@@ -30,6 +27,11 @@ namespace ContractingCompany.Models.Office.OfficeRepositoryFld{
         public OfficeRepository GetOfficeRepository(int key)
         {
             return _ctx.OfficeRepositories.Find(key);
+        }
+
+        public OfficeRepository GetOfficeRepositoryByProductID(int key)
+        {
+            return _ctx.OfficeRepositories.Where(i => i.ProductID == key).First();
         }
 
         public void UpdateAll(IQueryable<OfficeRepository> list)

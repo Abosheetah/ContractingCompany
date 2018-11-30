@@ -1,0 +1,34 @@
+@model OfficeRepository
+<h3 class="p-2 bg-primary text-white text-center">إضافة جرد المخزن الرئيس</h3> 
+<div class="container-fluid mt-3">      
+    <form  asp-action="UpdateQuantity" method="POST"> 
+
+        <div class="form-group"> 
+
+            <input asp-for="ID" name="ID" class="form-control" rows="5" >
+            <input asp-for="ProductID" name="ProductID" class="form-control" rows="5" >
+
+            <label asp-for="Product.Name" class="font-weight-bold"></label>
+            <input asp-for="Product.Name" name="Product.Name" class="form-control" rows="5" disabled>         
+        
+            <label asp-for="Product.Code" class="font-weight-bold"></label>
+            <input asp-for="Product.Code" name="Product.Code" class="form-control" rows="5" disabled>
+
+            <label asp-for="Product.Barcode" class="font-weight-bold"></label>
+            <input asp-for="Product.Barcode" name="Product.Barcode" class="form-control" rows="5" disabled>
+
+            <label asp-for="Product.ProductionCompanyName" class="font-weight-bold"></label>
+            <input asp-for="Product.ProductionCompanyName" name="Product.ProductionCompanyName" class="form-control" rows="5" disabled>
+          
+            <label asp-for="Quantity" class="font-weight-bold"></label>
+            <input asp-for="Quantity" name="Quantity" class="form-control" rows="5">
+        </div>                  
+        
+        <div class="text-right">
+            <div class="form-group">                      
+                <button class="btn btn-primary"  type="submit">Save</button>                      
+            </div>  
+        </div>                                                               
+
+    </form>            
+</div>
